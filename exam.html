@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP3級CBTデモ試験 - 試験画面</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>FP3級CBTデモ試験</h1>
+    </header>
+
+    <main class="exam-page">
+        <div class="exam-container">
+            <!-- 左ペイン：問題ナビゲーション -->
+            <nav class="question-nav">
+                <h3>問題一覧</h3>
+                <div class="nav-buttons" id="questionNavButtons">
+                    <!-- JavaScriptで動的に生成 -->
+                </div>
+            </nav>
+
+            <!-- 中央ペイン：問題エリア -->
+            <section class="question-area">
+                <div class="question-header">
+                    <h2 id="questionNumber">問1 / 10</h2>
+                </div>
+                <div class="question-content">
+                    <div class="question-text" id="questionText">
+                        <!-- 問題文がここに表示される -->
+                    </div>
+                    <div class="choices" id="questionChoices">
+                        <!-- 選択肢がここに表示される -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 右ペイン：操作・情報エリア -->
+            <aside class="control-panel">
+                <div class="timer-section">
+                    <h3>残り時間</h3>
+                    <div class="timer" id="timer">15:00</div>
+                </div>
+
+                <div class="navigation-section">
+                    <button id="prevBtn" class="nav-btn prev-btn" disabled>＜ 前の問題へ</button>
+                    <button id="nextBtn" class="nav-btn next-btn">次の問題へ ＞</button>
+                </div>
+
+                <div class="action-section">
+                    <button id="finishBtn" class="finish-btn">試験を終了する</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 確認モーダル -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <h3>確認</h3>
+            <p id="confirmMessage"></p>
+            <div class="modal-buttons">
+                <button id="confirmYes" class="modal-btn confirm-btn">はい</button>
+                <button id="confirmNo" class="modal-btn cancel-btn">いいえ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 時間切れモーダル -->
+    <div id="timeupModal" class="modal">
+        <div class="modal-content">
+            <h3>時間切れ</h3>
+            <p>時間切れです。自動的に採点します。</p>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/translator.js"></script>
+    <script src="js/question-manager.js"></script>
+    <script src="js/exam.js"></script>
+</body>
+</html>
