@@ -11,7 +11,22 @@
         <h1>FP3級CBTデモ試験</h1>
     </header>
 
-    <main class="exam-page">
+    <!-- ロード画面 -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>問題を準備中...</h2>
+            <p id="loadingMessage">筆記・実技問題を読み込んでいます</p>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span id="progressText">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="exam-page" id="examPage" style="display: none;">
         <div class="exam-container">
             <!-- 左ペイン：問題ナビゲーション -->
             <nav class="question-nav">
@@ -24,7 +39,7 @@
             <!-- 中央ペイン：問題エリア -->
             <section class="question-area">
                 <div class="question-header">
-                    <h2 id="questionNumber">問1 / 10</h2>
+                    <h2 id="questionNumber">問1 / 20</h2>
                 </div>
                 <div class="question-content">
                     <div class="question-text" id="questionText">
@@ -40,7 +55,7 @@
             <aside class="control-panel">
                 <div class="timer-section">
                     <h3>残り時間</h3>
-                    <div class="timer" id="timer">15:00</div>
+                    <div class="timer" id="timer">30:00</div>
                 </div>
 
                 <div class="navigation-section">

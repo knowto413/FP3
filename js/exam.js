@@ -2,7 +2,7 @@ class ExamManager {
     constructor() {
         this.currentQuestionIndex = 0;
         this.answers = {};
-        this.timeLimit = 15 * 60; // 15分（秒）
+        this.timeLimit = 30 * 60; // 30分（秒）- 筆記+実技の20問対応
         this.remainingTime = this.timeLimit;
         this.timerInterval = null;
         this.startTime = parseInt(sessionStorage.getItem('examStartTime')) || Date.now();
@@ -10,59 +10,62 @@ class ExamManager {
         this.initializeElements();
         this.initializeEventListeners();
         this.loadAnswers();
-        this.setupTimer();
         
         // 問題をランダムに選択して初期化（非同期）
         this.initializeQuestions();
     }
 
     async initializeQuestions() {
-        // ローディング表示
-        this.showLoading();
-        
         try {
-            // タイムアウトを設定（10秒）
-            const timeoutPromise = new Promise((_, reject) => {
-                setTimeout(() => reject(new Error('API取得タイムアウト')), 10000);
-            });
+            // 進捗バーでローディング表示
+            await this.showLoadingWithProgress();
             
-            // APIから問題を取得（タイムアウト付き）
-            this.questions = await Promise.race([
-                questionManager.initializeQuestions(10, true),
-                timeoutPromise
-            ]);
+            // 問題を生成（筆記10問+実技10問=20問）
+            this.questions = await this.generateQuestions();
+            
+            // ローディング非表示
+            await this.hideLoadingScreen();
+            
+            // タイマー開始
+            this.setupTimer();
+            
+            // 問題が取得できた場合のみ表示
+            if (this.questions && this.questions.length > 0) {
+                this.renderQuestion();
+                this.renderNavigation();
+            } else {
+                this.showError('問題の読み込みに失敗しました。ページを再読み込みしてください。');
+            }
             
         } catch (error) {
-            console.warn('問題の初期化に失敗しました。デフォルト問題を使用します。', error);
-            // フォールバック: 既存の問題のみ使用
-            this.questions = this.getDefaultQuestions();
-        }
-        
-        // ローディング非表示
-        this.hideLoading();
-        
-        // 問題が取得できた場合のみ表示
-        if (this.questions && this.questions.length > 0) {
-            this.renderQuestion();
-            this.renderNavigation();
-        } else {
+            console.error('問題の初期化に失敗:', error);
+            await this.hideLoadingScreen();
             this.showError('問題の読み込みに失敗しました。ページを再読み込みしてください。');
         }
     }
 
-    // デフォルト問題を取得
-    getDefaultQuestions() {
-        try {
-            // 既存問題をシャッフルして10問選択
-            const shuffledQuestions = this.shuffleArray([...questions]);
-            return shuffledQuestions.slice(0, 10).map((question, index) => ({
+    // 問題を生成（筆記10問+実技10問）
+    async generateQuestions() {
+        return new Promise((resolve) => {
+            // 筆記問題から10問をランダム選択
+            const shuffledWritten = this.shuffleArray([...writtenQuestions]);
+            const selectedWritten = shuffledWritten.slice(0, 10);
+            
+            // 実技問題から10問をランダム選択
+            const shuffledPractical = this.shuffleArray([...practicalQuestions]);
+            const selectedPractical = shuffledPractical.slice(0, 10);
+            
+            // 問題を結合してIDを振り直し
+            const allQuestions = [...selectedWritten, ...selectedPractical].map((question, index) => ({
                 ...question,
                 id: index + 1
             }));
-        } catch (error) {
-            console.error('デフォルト問題の取得に失敗:', error);
-            return [];
-        }
+            
+            // 少し遅延を入れてローディング画面を見せる
+            setTimeout(() => {
+                resolve(allQuestions);
+            }, 100);
+        });
     }
 
     // 配列をシャッフル
@@ -74,21 +77,50 @@ class ExamManager {
         return array;
     }
 
-    // ローディング表示
-    showLoading() {
-        const loadingDiv = document.createElement('div');
-        loadingDiv.id = 'loading';
-        loadingDiv.innerHTML = '<p>問題を読み込み中...</p>';
-        loadingDiv.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 1px solid #ccc; border-radius: 5px; z-index: 1000;';
-        document.body.appendChild(loadingDiv);
+    // 進捗バー付きローディング表示
+    async showLoadingWithProgress() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const loadingMessage = document.getElementById('loadingMessage');
+        
+        const steps = [
+            { progress: 20, message: '筆記問題を準備中...' },
+            { progress: 40, message: '実技問題を準備中...' },
+            { progress: 60, message: '問題をシャッフル中...' },
+            { progress: 80, message: '最終調整中...' },
+            { progress: 100, message: '完了！' }
+        ];
+        
+        for (const step of steps) {
+            await new Promise(resolve => {
+                setTimeout(() => {
+                    progressFill.style.width = step.progress + '%';
+                    progressText.textContent = step.progress + '%';
+                    loadingMessage.textContent = step.message;
+                    resolve();
+                }, 300);
+            });
+        }
+        
+        // 少し待ってから次の段階へ
+        await new Promise(resolve => setTimeout(resolve, 500));
     }
 
-    // ローディング非表示
-    hideLoading() {
-        const loadingDiv = document.getElementById('loading');
-        if (loadingDiv) {
-            loadingDiv.remove();
-        }
+    // ローディング画面を非表示
+    async hideLoadingScreen() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        const examPage = document.getElementById('examPage');
+        
+        return new Promise(resolve => {
+            loadingScreen.style.animation = 'fadeOut 0.5s ease-in-out';
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+                examPage.style.display = 'block';
+                examPage.style.animation = 'fadeIn 0.5s ease-in-out';
+                resolve();
+            }, 500);
+        });
     }
 
     // エラー表示
