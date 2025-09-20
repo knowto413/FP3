@@ -325,56 +325,101 @@ class ExamManager {
     }
     
     renderQuestion() {
-        const question = this.questions[this.currentQuestionIndex];
+        try {
+            console.log('renderQuestion開始');
+            console.log('currentQuestionIndex:', this.currentQuestionIndex);
+            console.log('questions.length:', this.questions ? this.questions.length : 'undefined');
 
-        this.questionNumber.textContent = `問${this.currentQuestionIndex + 1} / ${this.questions.length}`;
-        this.questionText.textContent = question.statement;
+            const question = this.questions[this.currentQuestionIndex];
+            console.log('現在の問題:', question);
 
-        // ランク表示を追加
-        this.renderQuestionRank(question);
-        
-        this.questionChoices.innerHTML = '';
-        
-        question.choices.forEach(choice => {
-            const choiceDiv = document.createElement('div');
-            choiceDiv.classList.add('choice');
-            
-            const radio = document.createElement('input');
-            radio.type = 'radio';
-            radio.name = 'answer';
-            radio.value = choice.id;
-            radio.id = `choice_${choice.id}`;
-            
-            // 保存された回答があれば復元
-            if (this.answers[question.id] === choice.id) {
-                radio.checked = true;
-                choiceDiv.classList.add('selected');
+            if (!question) {
+                console.error('問題が取得できません');
+                this.showError('問題データが見つかりません');
+                return;
             }
-            
-            const label = document.createElement('label');
-            label.htmlFor = `choice_${choice.id}`;
-            label.textContent = choice.text;
-            
-            choiceDiv.appendChild(radio);
-            choiceDiv.appendChild(label);
-            
-            // 選択肢のクリックイベント
-            choiceDiv.addEventListener('click', () => {
-                // 他の選択肢から selected クラスを削除
-                document.querySelectorAll('.choice').forEach(c => c.classList.remove('selected'));
-                choiceDiv.classList.add('selected');
-                radio.checked = true;
-                
-                this.answers[question.id] = choice.id;
-                this.saveAnswers();
-                this.renderNavigation();
+
+            // DOM要素の存在確認
+            console.log('questionNumber:', this.questionNumber);
+            console.log('questionText:', this.questionText);
+            console.log('questionChoices:', this.questionChoices);
+
+            if (!this.questionNumber || !this.questionText || !this.questionChoices) {
+                console.error('必要なDOM要素が見つかりません');
+                this.showError('画面要素の初期化に失敗しました');
+                return;
+            }
+
+            this.questionNumber.textContent = `問${this.currentQuestionIndex + 1} / ${this.questions.length}`;
+            this.questionText.textContent = question.statement || '問題文が設定されていません';
+
+            console.log('問題文設定完了:', question.statement);
+
+            // ランク表示を追加
+            this.renderQuestionRank(question);
+
+            this.questionChoices.innerHTML = '';
+
+            if (!question.choices || !Array.isArray(question.choices)) {
+                console.error('選択肢データが正しくありません:', question.choices);
+                this.showError('選択肢データに問題があります');
+                return;
+            }
+
+            console.log('選択肢数:', question.choices.length);
+
+            question.choices.forEach((choice, index) => {
+                console.log(`選択肢${index + 1}:`, choice);
+
+                const choiceDiv = document.createElement('div');
+                choiceDiv.classList.add('choice');
+
+                const radio = document.createElement('input');
+                radio.type = 'radio';
+                radio.name = 'answer';
+                radio.value = choice.id;
+                radio.id = `choice_${choice.id}`;
+
+                // 保存された回答があれば復元
+                if (this.answers[question.id] === choice.id) {
+                    radio.checked = true;
+                    choiceDiv.classList.add('selected');
+                }
+
+                const label = document.createElement('label');
+                label.htmlFor = `choice_${choice.id}`;
+                label.textContent = choice.text || `選択肢${index + 1}`;
+
+                choiceDiv.appendChild(radio);
+                choiceDiv.appendChild(label);
+
+                // 選択肢のクリックイベント
+                choiceDiv.addEventListener('click', () => {
+                    // 他の選択肢から selected クラスを削除
+                    document.querySelectorAll('.choice').forEach(c => c.classList.remove('selected'));
+                    choiceDiv.classList.add('selected');
+                    radio.checked = true;
+
+                    this.answers[question.id] = choice.id;
+                    this.saveAnswers();
+                    this.renderNavigation();
+                });
+
+                this.questionChoices.appendChild(choiceDiv);
             });
-            
-            this.questionChoices.appendChild(choiceDiv);
-        });
-        
-        // ナビゲーションボタンの状態更新
-        this.updateNavigationButtons();
+
+            console.log('選択肢レンダリング完了');
+
+            // ナビゲーションボタンの状態更新
+            this.updateNavigationButtons();
+
+            console.log('renderQuestion完了');
+
+        } catch (error) {
+            console.error('renderQuestionでエラー:', error);
+            console.error('エラー詳細:', error.stack);
+            this.showError('問題の表示でエラーが発生しました');
+        }
     }
 
     renderQuestionRank(question) {
