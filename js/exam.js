@@ -138,18 +138,20 @@ class ExamManager {
 
         // 不足分を補完
         let attempts = 0;
-        const maxAttempts = allRankedQuestions.length * 2;
+        const maxAttempts = allRankedQuestions ? Math.max(allRankedQuestions.length * 2, 100) : 100;
 
-        while (selected.length < count && attempts < maxAttempts) {
+        while (selected.length < count && attempts < maxAttempts && allRankedQuestions && allRankedQuestions.length > 0) {
             attempts++;
             const allQuestions = [...allRankedQuestions];
             const shuffled = allQuestions.sort(() => Math.random() - 0.5);
             const candidate = shuffled[0];
 
-            // 重複チェック
-            const exists = selected.some(q => q.originalId === candidate.originalId);
-            if (!exists) {
-                selected.push(candidate);
+            if (candidate) {
+                // 重複チェック
+                const exists = selected.some(q => q.originalId === candidate.originalId);
+                if (!exists) {
+                    selected.push(candidate);
+                }
             }
         }
 
