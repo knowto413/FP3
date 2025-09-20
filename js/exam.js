@@ -6,11 +6,14 @@ class ExamManager {
         this.remainingTime = this.timeLimit;
         this.timerInterval = null;
         this.startTime = parseInt(sessionStorage.getItem('examStartTime')) || Date.now();
-        
+
         this.initializeElements();
         this.initializeEventListeners();
         this.loadAnswers();
-        
+
+        // フォールバックタイマー: 10秒後に強制的にローディングを終了
+        this.setupFailsafe();
+
         // 問題をランダムに選択して初期化（非同期）
         this.initializeQuestions();
     }
@@ -49,6 +52,12 @@ class ExamManager {
 
                     this.renderNavigation();
                     console.log('renderNavigation完了');
+
+                    // 正常に初期化完了したのでフォールバックタイマーをクリア
+                    if (this.failsafeTimer) {
+                        clearTimeout(this.failsafeTimer);
+                        console.log('フォールバックタイマーをクリア');
+                    }
 
                     console.log('=== 初期化完了 ===');
                 } catch (renderError) {
@@ -294,7 +303,81 @@ class ExamManager {
 
         document.body.appendChild(errorDiv);
     }
-    
+
+    // フォールバック機能: 一定時間後に強制的にローディングを終了
+    setupFailsafe() {
+        console.log('フォールバックタイマーを設定 (10秒)');
+        this.failsafeTimer = setTimeout(() => {
+            console.log('フォールバック実行: 強制的にローディングを終了');
+            this.forceEndLoading();
+        }, 10000); // 10秒後
+    }
+
+    // 強制的にローディングを終了
+    forceEndLoading() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        const examPage = document.getElementById('examPage');
+
+        console.log('強制ローディング終了開始');
+
+        if (loadingScreen) {
+            loadingScreen.style.display = 'none';
+            console.log('ローディング画面を強制非表示');
+        }
+
+        if (examPage) {
+            examPage.style.display = 'block';
+            console.log('試験画面を強制表示');
+        }
+
+        // 基本データで問題を生成（フォールバック）
+        if (!this.questions || this.questions.length === 0) {
+            console.log('フォールバック: 基本データで問題を生成');
+            this.generateFallbackQuestions();
+        }
+
+        // タイマー開始
+        this.setupTimer();
+
+        // 問題がある場合は表示
+        if (this.questions && this.questions.length > 0) {
+            this.renderQuestion();
+            this.renderNavigation();
+            console.log('フォールバック完了: 問題表示');
+        } else {
+            this.showError('問題データの読み込みに失敗しました。ページを再読み込みしてください。');
+        }
+    }
+
+    // フォールバック用の問題生成
+    generateFallbackQuestions() {
+        try {
+            let selectedQuestions = [];
+
+            if (typeof writtenQuestions !== 'undefined' && typeof practicalQuestions !== 'undefined') {
+                const shuffledWritten = this.shuffleArray([...writtenQuestions]);
+                const selectedWritten = shuffledWritten.slice(0, 10);
+
+                const shuffledPractical = this.shuffleArray([...practicalQuestions]);
+                const selectedPractical = shuffledPractical.slice(0, 10);
+
+                selectedQuestions = [...selectedWritten, ...selectedPractical];
+            } else {
+                console.error('基本問題データも利用できません');
+                return;
+            }
+
+            this.questions = selectedQuestions.map((question, index) => ({
+                ...question,
+                id: index + 1
+            }));
+
+            console.log('フォールバック問題生成完了:', this.questions.length + '問');
+        } catch (error) {
+            console.error('フォールバック問題生成失敗:', error);
+        }
+    }
+
     initializeElements() {
         this.questionNavButtons = document.getElementById('questionNavButtons');
         this.questionNumber = document.getElementById('questionNumber');
