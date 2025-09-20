@@ -3106,7 +3106,7 @@ const extractedPracticalQuestions = [
         "text": "3）450万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "status": "valid"
   },

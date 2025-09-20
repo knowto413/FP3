@@ -19,7 +19,7 @@ const rankedQuestions = {
         "text": "5,400万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "B",
     "importance_weight": 75.0,
@@ -39,7 +39,7 @@ const rankedQuestions = {
         "text": "3）Aさんが⻑⼥Cさんに現⾦を贈与し、⻑⼥Cさんが相続時精算課税制度を選択した場合、その 選択をした年分以降にAさんから⻑⼥Cさんへ贈与する財産について、暦年課税へ変更するこ とはできません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "B",
     "importance_weight": 60.0,
@@ -59,7 +59,7 @@ const rankedQuestions = {
         "text": "855万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "B",
     "importance_weight": 75.0,
@@ -83,7 +83,7 @@ const rankedQuestions = {
         "text": "3）450万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "B",
     "importance_weight": 75.0,
@@ -233,7 +233,7 @@ const rankedQuestions = {
         "text": "⾃宅の敷地と賃貸マンションの敷地について、 『⼩規模宅地等についての相続税の課税価格の 計算の特例』の適⽤を受けようとする場合、適⽤対象⾯積は所定の算式により調整され、完全 併⽤はできません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -313,7 +313,7 @@ const rankedQuestions = {
         "text": "Aさんが、甲⼟地についてX社と事業⽤定期借地権の設定契約を締結する場合、その契約は、 公正証書によってしなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -333,7 +333,7 @@ const rankedQuestions = {
         "text": "8,700万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -377,7 +377,7 @@ const rankedQuestions = {
         "text": "90万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -461,7 +461,7 @@ const rankedQuestions = {
         "text": "事業⽤定期借地権⽅式により、Aさんが甲⼟地をX社に賃貸した後にAさんの相続が開始した 場合、相続税の課税価格の計算上、甲⼟地は⾃⽤地として評価されますので、相続税額の軽減 効果はありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -501,7 +501,7 @@ const rankedQuestions = {
         "text": "3）⾃宅の敷地を妻Bさんが相続により取得した場合、当該敷地を相続税の申告期限前に売却し た場合であっても『⼩規模宅地等についての相続税の課税価格の計算の特例』の適⽤を受ける ことができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 47.5,
@@ -541,7 +541,7 @@ const rankedQuestions = {
         "text": "3）5,400万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -609,7 +609,7 @@ const rankedQuestions = {
         "text": "3）① 600万円 ② 法定相続分 ③ 80％"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -629,7 +629,7 @@ const rankedQuestions = {
         "text": "7,400万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -649,7 +649,7 @@ const rankedQuestions = {
         "text": "3）8,000万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -669,7 +669,7 @@ const rankedQuestions = {
         "text": "① ５⼈ ② 6,000万円 ③ 500万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -801,7 +801,7 @@ const rankedQuestions = {
         "text": "Aさんが建築した賃貸アパートの建物について所有権の保存登記を⾏う場合、登録免許税は課 されない。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -823,7 +823,7 @@ const rankedQuestions = {
         "text": "3）相続税の申告書は、原則として、相続の開始があったことを知った⽇の翌⽇から６カ⽉以内 に、被相続⼈であるAさんの死亡時の住所地を所轄する税務署⻑に提出しなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -847,7 +847,7 @@ const rankedQuestions = {
         "text": "Aさんは、⼤学在学中に学⽣納付特例制度の適⽤を受けていた期間に係る保険料をこれから 納付することができます。保険料を追納すれば、将来受給する⽼齢基礎年⾦の額を増やすこと ができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 7.5,
@@ -911,7 +911,7 @@ const rankedQuestions = {
         "text": "⽣命保険料控除は、勤務先の年末調整において適⽤を受けることができず、適⽤を受けるた めには所得税の確定申告を⾏う必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -975,7 +975,7 @@ const rankedQuestions = {
         "text": "建設協⼒⾦⽅式により建設した店舗の賃貸借契約は、契約の更新がなく、借主であるX社が 賃貸借契約満了時に店舗を撤去し、貸主であるAさんに甲⼟地を更地で返還することが保証さ れています"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -995,7 +995,7 @@ const rankedQuestions = {
         "text": "相続⼈が⾃宅に保管されていた⾃筆証書遺⾔を発⾒した場合、相続⼈は、遅滞なく、⾃筆証 書遺⾔を簡易裁判所に提出して、その検認を請求しなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1015,7 +1015,7 @@ const rankedQuestions = {
         "text": "795,000円×480⽉/480⽉"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1059,7 +1059,7 @@ const rankedQuestions = {
         "text": "契約転換制度を活⽤して定期保険特約付終⾝保険を転換し、医療保障や介護保障を準備する ⽅法が考えられます。転換後契約の保険料は転換前契約の加⼊時の年齢により算出されますの で、新規に加⼊するよりも保険料負担を抑えることができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1099,7 +1099,7 @@ const rankedQuestions = {
         "text": "当該養⽼保険の⽀払保険料は、その全額を福利厚⽣費として損⾦の額に算⼊することができ ます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1139,7 +1139,7 @@ const rankedQuestions = {
         "text": "⾃筆証書遺⾔を作成した場合、遺⾔者は、作成した遺⾔書をあらかじめ家庭裁判所に提出 し、その有効性について確認を受けておく必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1159,7 +1159,7 @@ const rankedQuestions = {
         "text": "0.60％"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1199,7 +1199,7 @@ const rankedQuestions = {
         "text": "3）国⺠年⾦の第１号被保険者は、国⺠年⾦基⾦に加⼊することができますが、国⺠年⾦基⾦に 加⼊した場合は、国⺠年⾦の付加保険料を納付することができません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1259,7 +1259,7 @@ const rankedQuestions = {
         "text": "570万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1359,7 +1359,7 @@ const rankedQuestions = {
         "text": "3）Aさんは、⺟Dさんに係る扶養控除の適⽤を受けることができ、その控除額は58万円です"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1379,7 +1379,7 @@ const rankedQuestions = {
         "text": "595万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1419,7 +1419,7 @@ const rankedQuestions = {
         "text": "Aさんが⽼齢基礎年⾦の繰上げ⽀給の請求をする場合、その請求と同時に⽼齢厚⽣年⾦の繰 上げ⽀給の請求をしなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1479,7 +1479,7 @@ const rankedQuestions = {
         "text": "496万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1607,7 +1607,7 @@ const rankedQuestions = {
         "text": "Aさんが65歳から受給することができる⽼齢厚⽣年⾦の額には、妻Bさんが65歳になるまで の間、配偶者の加給年⾦額が加算されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1711,7 +1711,7 @@ const rankedQuestions = {
         "text": "3）① 終⾝ ② 68,000円 ③ 社会保険料控除"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1779,7 +1779,7 @@ const rankedQuestions = {
         "text": "3）Aさんが65歳から受給することができる⽼齢厚⽣年⾦には、妻Bさんが65歳になるまでの 間、加給年⾦額が加算されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1839,7 +1839,7 @@ const rankedQuestions = {
         "text": "3）最近では、うつ病などの精神疾患による就業不能を保障の対象とする保険商品も販売されて います。各⽣命保険会社が取り扱う就業不能保険の保障内容や⽀払基準をよく確認したうえ で、加⼊の可否をご検討ください"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1859,7 +1859,7 @@ const rankedQuestions = {
         "text": "⽣命保険料控除は、⽣命保険に加⼊した年分については勤務先の年末調整で適⽤を受けるこ とができませんので、適⽤を受けるためには、所得税の確定申告が必要となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1879,7 +1879,7 @@ const rankedQuestions = {
         "text": "現時点で当該⽣命保険を払済終⾝保険に変更する場合、契約は継続するため、経理処理は必 要ありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -1919,7 +1919,7 @@ const rankedQuestions = {
         "text": "① 65歳 ② 原因を問わず ③ ２割"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -2023,7 +2023,7 @@ const rankedQuestions = {
         "text": "介護保障を検討する際には、保険⾦額に加え、保険⾦等の⽀払事由が保険会社独⾃のもの か、公的介護保険等の社会保障制度と連動しているものか等、どのような場合に保険⾦や給付 ⾦が⽀払われるか、加⼊前に確認しておきましょう"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2043,7 +2043,7 @@ const rankedQuestions = {
         "text": "Aさんが健康保険の任意継続被保険者とならなかった場合は、国⺠健康保険に加⼊します。A さんが国⺠健康保険に加⼊した場合、妻Bさんを国⺠健康保険の被扶養者とすることができま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -2067,7 +2067,7 @@ const rankedQuestions = {
         "text": "X社が契約者貸付制度を利⽤し、契約者貸付⾦を受け取った場合、当該終⾝保険契約は継続 しているため、経理処理は必要ありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2107,7 +2107,7 @@ const rankedQuestions = {
         "text": "８万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2127,7 +2127,7 @@ const rankedQuestions = {
         "text": "公正証書遺⾔は、証⼈２⼈以上の⽴会いのもと、遺⾔者が遺⾔の趣旨を公証⼈に⼝授し、公 証⼈がこれを筆記して作成するものです"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2147,7 +2147,7 @@ const rankedQuestions = {
         "text": "3）780,900円×540⽉ 480⽉"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2231,7 +2231,7 @@ const rankedQuestions = {
         "text": "遺族基礎年⾦および遺族厚⽣年⾦は、雑所得として総合課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2279,7 +2279,7 @@ const rankedQuestions = {
         "text": "個⼈事業主となったAさんが⽣活習慣病等で働けなくなった場合、会社員のときよりも収⼊ が減少するリスクが⾼くなると思われます。そのため、治療費の準備に加えて、働けなくなっ た場合の所得補償の準備もご検討ください"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -2319,7 +2319,7 @@ const rankedQuestions = {
         "text": "公正証書遺⾔は、証⼈２⼈以上の⽴会いのもと、遺⾔者が遺⾔の趣旨を公証⼈に⼝授し、公 証⼈がこれを筆記して作成します"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2343,7 +2343,7 @@ const rankedQuestions = {
         "text": "① 70,000円 ② 全額 ③ 退職所得"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 26.7,
@@ -2387,7 +2387,7 @@ const rankedQuestions = {
         "text": "妻Bさんが65歳から⽼齢基礎年⾦を受給する場合、⽼齢基礎年⾦の額に振替加算額が加算さ れます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2535,7 +2535,7 @@ const rankedQuestions = {
         "text": "孫Fさんおよび孫Gさんは、相続税額の２割加算の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -2555,7 +2555,7 @@ const rankedQuestions = {
         "text": "780,900円×480⽉ 480⽉"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2575,7 +2575,7 @@ const rankedQuestions = {
         "text": "3）⼀時払養⽼保険の満期保険⾦に係る保険差益は、源泉分離課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2619,7 +2619,7 @@ const rankedQuestions = {
         "text": "Aさんが、がんに罹患し、三⼤疾病⼀時⾦特約から⼀時⾦を受け取った場合、当該⼀時⾦は ⼀時所得として総合課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -2639,7 +2639,7 @@ const rankedQuestions = {
         "text": "① ４ ② ３分の２ ③ １年６カ⽉"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -2659,7 +2659,7 @@ const rankedQuestions = {
         "text": "Aさんが死亡した場合にX社が受け取る死亡保険⾦は、借⼊⾦の返済等の事業資⾦として活⽤ することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2679,7 +2679,7 @@ const rankedQuestions = {
         "text": "590万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2723,7 +2723,7 @@ const rankedQuestions = {
         "text": "3）遺産分割をめぐる争いを防ぐ⼿段として、公正証書遺⾔の作成をお勧めします。公正証書遺 ⾔は証⼈２⼈以上の⽴会いのもと、遺⾔者が遺⾔の趣旨を公証⼈に⼝授し、公証⼈がこれを筆 記して作成します"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2771,7 +2771,7 @@ const rankedQuestions = {
         "text": "① 特定疾病が原因で ② ３ ③ ⾼額療養費"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2811,7 +2811,7 @@ const rankedQuestions = {
         "text": "急な資⾦需要の発⽣により、X社が契約者貸付制度を利⽤した場合、当該終⾝保険契約は継 続しているため、経理処理は必要ありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -2831,7 +2831,7 @@ const rankedQuestions = {
         "text": "3）Aさんが⽀払っている⻑⼥Cさんの国⺠年⾦の保険料は、その全額がAさんの社会保険料控除 の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -2855,7 +2855,7 @@ const rankedQuestions = {
         "text": "690万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 18.3,
@@ -2919,7 +2919,7 @@ const rankedQuestions = {
         "text": "甲⼟地と⼄⼟地を⼀体とした⼟地に賃貸マンションを建築する場合、⼄⼟地単独での有効活 ⽤に⽐べて、上限となる容積率が⼤きくなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -2959,7 +2959,7 @@ const rankedQuestions = {
         "text": "3）Aさんが、がんと診断確定され、がん⼀時⾦特約から⼀時⾦を受け取った場合、当該⼀時⾦ は⼀時所得として総合課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -2999,7 +2999,7 @@ const rankedQuestions = {
         "text": "① ができます ② 全額 ③ 契約者である法⼈"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3039,7 +3039,7 @@ const rankedQuestions = {
         "text": "Aさんは、⽼後の年⾦収⼊を増やすために、確定拠出年⾦の個⼈型年⾦に加⼊することがで きます。将来の年⾦額は、Aさんの指図に基づく運⽤実績により左右されますので、年⾦の受 取総額が拠出した掛⾦の合計額を下回る可能性がある点に留意する必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3087,7 +3087,7 @@ const rankedQuestions = {
         "text": "建設協⼒⾦⽅式により建設した店舗の賃貸借契約は、契約の更新がありません。賃貸借契約 では、借主であるX社が賃貸借契約満了後に店舗を撤去し、貸主であるAさんに甲⼟地を更地 で返還することが保証されています"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3127,7 +3127,7 @@ const rankedQuestions = {
         "text": "個⼈型年⾦の留意点として、加⼊時や運⽤期間中に各種の⼿数料がかかることや、年⾦資産 の運⽤リスクは加⼊者が負うことなどが挙げられます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -3211,7 +3211,7 @@ const rankedQuestions = {
         "text": "3）700万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 18.3,
@@ -3275,7 +3275,7 @@ const rankedQuestions = {
         "text": "定期借家契約を締結する際は、公正証書により⾏わなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3383,7 +3383,7 @@ const rankedQuestions = {
         "text": "⽣命保険料控除は、加⼊した年については勤務先の年末調整で適⽤を受けることができませ んので、適⽤を受けるためには、所得税の確定申告が必要となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3475,7 +3475,7 @@ const rankedQuestions = {
         "text": "介護保険の居宅サービスを利⽤する場合、要介護度に応じて利⽤できる限度額が決められて おり、限度額を超えて利⽤したサービスの費⽤は、全額⾃⼰負担となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3495,7 +3495,7 @@ const rankedQuestions = {
         "text": "Aさんが介護⼀時⾦特約から⼀時⾦を受け取った場合、当該⼀時⾦は、⼀時所得の収⼊⾦額 として総合課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3535,7 +3535,7 @@ const rankedQuestions = {
         "text": "福利厚⽣プランを導⼊する際は、退職⾦の⽀給根拠を明確にするため、退職⾦規程を整えて ください"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3595,7 +3595,7 @@ const rankedQuestions = {
         "text": "3）仮に、満期時の為替レートが円⾼ドル安になり、為替差損が⽣じた場合、当該損失の⾦額は Aさんの不動産所得の⾦額と損益通算することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3615,7 +3615,7 @@ const rankedQuestions = {
         "text": "① 貸家建付地 ② 50％ ③ ６分の１"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -3655,7 +3655,7 @@ const rankedQuestions = {
         "text": "介護保険の介護給付を受けようとする場合は、要介護者に該当することおよびその該当する 要介護状態区分について、都道府県知事の認定を受ける必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -3675,7 +3675,7 @@ const rankedQuestions = {
         "text": "保険会社各社は、⼊院給付⾦や⼿術給付⾦が定額で受け取れるものや通院保障が⼿厚いもの など、最近の医療事情に合わせて、さまざまなタイプの医療保険を取り扱っています。保障内 容や保障範囲をしっかりと確認したうえで、加⼊することをお勧めします"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -3715,7 +3715,7 @@ const rankedQuestions = {
         "text": "3）会社員であるAさんが所得税の確定申告をする場合、確定申告書はAさんの勤務先を経由し て、勤務先の住所地の所轄税務署⻑に提出することになります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3735,7 +3735,7 @@ const rankedQuestions = {
         "text": "公正証書遺⾔は、作成された遺⾔書の原本が公証役場に保管されるため、紛失や改ざんのお それがなく、安全性が⾼い遺⾔といえます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3775,7 +3775,7 @@ const rankedQuestions = {
         "text": "3）Aさんが65歳から受給することができる⽼齢厚⽣年⾦の額には、妻Bさんが60歳になるまで の間、配偶者の加給年⾦額が加算されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3815,7 +3815,7 @@ const rankedQuestions = {
         "text": "3）X社が当該⽣命保険契約を⻑男Bさんが65歳のときに解約した場合、解約時点における資産 計上額を取り崩し、解約返戻⾦額との差額を雑損失として、その事業年度の損⾦の額に算⼊し ます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3835,7 +3835,7 @@ const rankedQuestions = {
         "text": "⻑男Bさんが重い病気等で⼀定期間働けなくなった場合の業績悪化の可能性を考え、⻑男Bさ んが重い病気等になった場合にX社が⼀時⾦を受け取ることができる⽣前給付タイプの⽣命保 険に加⼊されることも検討事項の１つとなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3879,7 +3879,7 @@ const rankedQuestions = {
         "text": "Aさんが病気やケガによる療養のために、連続４⽇以上、業務に就くことができず、当該期 間について事業主から報酬が⽀払われない場合は、所定の⼿続により、傷病⼿当⾦が療養を開 始した⽇から起算して３年を限度として⽀給されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -3923,7 +3923,7 @@ const rankedQuestions = {
         "text": "保険会社各社は、⼊院給付⾦や⼿術給付⾦が定額で受け取れるタイプの医療保険や通院保障 が⼿厚いものなど、最近の医療事情に合わせて、さまざまなタイプの医療保険を取り扱ってい ます。保障内容や保障範囲をしっかりと確認したうえで、加⼊を検討されることをお勧めしま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -3943,7 +3943,7 @@ const rankedQuestions = {
         "text": "3）急な資⾦需要の発⽣により、X社が当該⽣命保険から契約者貸付制度を利⽤した場合、契約 者貸付⾦の全額を借⼊⾦として負債に計上する必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -3983,7 +3983,7 @@ const rankedQuestions = {
         "text": "3）Aさんが60歳以後も雇⽤保険の⼀般被保険者としてX社に勤務し、65歳で退職した場合は、 所定の⼿続により、雇⽤保険から⾼年齢求職者給付⾦を受給することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4031,7 +4031,7 @@ const rankedQuestions = {
         "text": "仮に、Aさんが登記の記載事項を信頼して甲⼟地を購⼊し、記載されていた登記名義⼈が真実 の権利者ではなかった場合であっても、原則として、Aさんは、甲⼟地に対する所有権を取得 することができる。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -4075,7 +4075,7 @@ const rankedQuestions = {
         "text": "① 無効 ② 不要 ③ 必要"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4095,7 +4095,7 @@ const rankedQuestions = {
         "text": "3）Aさんが65歳以後に受給する⽼齢厚⽣年⾦には、妻Bさんが65歳に達するまでの間、配偶者 の加給年⾦額が加算されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4159,7 +4159,7 @@ const rankedQuestions = {
         "text": "保険期間開始時から当該保険期間の６割に相当する期間においては、⽀払保険料の２分の１ を前払保険料として資産に計上し、残りの⽀払保険料については、期間の経過に応じて損⾦の 額に算⼊します"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4203,7 +4203,7 @@ const rankedQuestions = {
         "text": "⾃筆証書遺⾔は、秘密が保持できること、⼿続が簡便であること等のメリットがあります。 ⼀⽅、紛失や偽造の可能性があること、遺⾔の内容が不明瞭である場合、相続⼈間で無⽤なト ラブルを⽣じさせる可能性があること等のデメリットがあります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4223,7 +4223,7 @@ const rankedQuestions = {
         "text": "相続財産の⼤半が不動産であり、現物分割が難しい場合、⾃宅および賃貸アパートを取得す る⻑男Cさんが、その代償として⼆男Dさんに⾦銭を⽀払うという分割の⽅法が考えられます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4267,7 +4267,7 @@ const rankedQuestions = {
         "text": "遺族基礎年⾦や遺族厚⽣年⾦は、Aさんが亡くなった後、妻Bさんが再就職をして収⼊を得る ようになった場合でも、その給与収⼊によって年⾦額の減額や受給権が消滅することはありま せん"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4379,7 +4379,7 @@ const rankedQuestions = {
         "text": "3）保険期間中に被保険者であるAさんが死亡した場合、X社はそれまでに資産計上していた前払 保険料を取り崩して、受け取った死亡保険⾦との差額を雑損失として損⾦の額に算⼊します"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4399,7 +4399,7 @@ const rankedQuestions = {
         "text": "当該⽣命保険の払込保険料は、全額を損⾦の額に算⼊します。したがって、保険期間中に当 該⽣命保険を解約し、解約返戻⾦を受け取った場合、X社では、経理処理の必要はありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4467,7 +4467,7 @@ const rankedQuestions = {
         "text": "Aさんは⽼齢厚⽣年⾦の⽀給開始を66歳以後に繰り下げることができますが、⽼齢厚⽣年⾦ の繰下げ⽀給の申出は、⽼齢基礎年⾦の繰下げ⽀給の申出と同時に⾏う必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4491,7 +4491,7 @@ const rankedQuestions = {
         "text": "国内上場株式の売買において、通常、成⾏注⽂は指値注⽂に優先するため、売買が成⽴しや すくなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -4539,7 +4539,7 @@ const rankedQuestions = {
         "text": "甲マンションは中古マンションであるため、所得税の住宅借⼊⾦等特別控除の適⽤対象とはな らない。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 18.3,
@@ -4579,7 +4579,7 @@ const rankedQuestions = {
         "text": "公正証書遺⾔は、遺⾔者が、公証役場において遺⾔の趣旨を公証⼈に⼝授し、公証⼈がそれを 筆記して作成する遺⾔であり、証⼈１⼈以上の⽴会いにより作成することができる。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4639,7 +4639,7 @@ const rankedQuestions = {
         "text": "3）遺族の収⼊⾒込⾦額を計算する際には、公的年⾦の遺族給付のおおよその⾦額を把握するこ とが必要です。そのほか、妻Bさんの就労収⼊については、現実的な範囲内の⾦額を⾒込んで おくとよいでしょう"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4659,7 +4659,7 @@ const rankedQuestions = {
         "text": "3）総合医療特約において、疾病・災害⼊院給付⾦、⼿術給付⾦等の保障は準備されています が、がん保障に特化したものや退院後の通院保障など、Aさんのニーズに合わせて医療保障を 充実させることも検討事項の１つになります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4679,7 +4679,7 @@ const rankedQuestions = {
         "text": "Aさんの葬儀費⽤や⼦どもの教育資⾦は、終⾝保険や定期保険特約等の⼀時⾦タイプで準備 し、残されたご家族の⽣活費は収⼊保障特約等の年⾦タイプで準備するなど、ご遺族の⽣活設 計に応じて保障内容を組み⽴てることをお勧めします"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4771,7 +4771,7 @@ const rankedQuestions = {
         "text": "790万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4791,7 +4791,7 @@ const rankedQuestions = {
         "text": "⼟地・家屋の固定資産税の納税義務者は、毎年４⽉１⽇現在で所有者として固定資産課税台帳 に登録されている者であるが、実務上、売買契約により、売主と買主の間で固定資産税の負担 割合を所有期間で按分して精算するのが⼀般的である。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4815,7 +4815,7 @@ const rankedQuestions = {
         "text": "① 地積 ② 住宅性能評価 ③ 所有権"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -4859,7 +4859,7 @@ const rankedQuestions = {
         "text": "X社がAさんに⽀給する役員退職⾦のうち、役員退職⾦の額として相当であると認められる額 を超える部分については、法⼈税法上、損⾦の額に算⼊されません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4879,7 +4879,7 @@ const rankedQuestions = {
         "text": "X社が当該保険契約を⻑男Bさんが65歳のときに解約した場合、解約時点における資産計上 額を取り崩し、解約返戻⾦額との差額を雑損失として、その事業年度の損⾦の額に計上しま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4899,7 +4899,7 @@ const rankedQuestions = {
         "text": "Aさんが公正証書遺⾔を作成する場合、証⼈２⼈以上の⽴会いが必要となりますが、妻Bさん は証⼈になることはできません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -4939,7 +4939,7 @@ const rankedQuestions = {
         "text": "Aさんは、国⺠年⾦基⾦に加⼊して掛⾦を⽀払うことにより、⽼齢年⾦を受給することがで きます。国⺠年⾦基⾦の掛⾦は、税法上、全額が所得控除の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -4959,7 +4959,7 @@ const rankedQuestions = {
         "text": "指値注⽂により国内上場株式を買い付ける場合、指値注⽂は成⾏注⽂に優先するため、売買 が成⽴しやすくなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -4979,7 +4979,7 @@ const rankedQuestions = {
         "text": "3）X社は過去３年間、増収増益を達成していることから、X社株式の株価は今後必ず上昇します ので、ご購⼊をお勧めします"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -5067,7 +5067,7 @@ const rankedQuestions = {
         "text": "保険期間中にX社に緊急の資⾦需要が⽣じた場合、契約者貸付制度を活⽤することができま す。ただし、契約者貸付を利⽤できる上限は、利⽤時点での払込保険料相当額までとなりま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5131,7 +5131,7 @@ const rankedQuestions = {
         "text": "Aさんが公正証書遺⾔を作成する場合の証⼈には、妻Bさんがなることはできませんが、⻑⼥ Cさんおよび⻑男Dさんは証⼈になることができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5155,7 +5155,7 @@ const rankedQuestions = {
         "text": "雇⽤保険の⼀般被保険者であるAさんは、⾃ら費⽤を負担して、⾃⼰啓発のために厚⽣労働 ⼤⾂の指定する⼀般教育訓練を受講し修了した場合、⼀定の要件のもとに、教育訓練給付⾦を 受給することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5199,7 +5199,7 @@ const rankedQuestions = {
         "text": "880万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5263,7 +5263,7 @@ const rankedQuestions = {
         "text": "3）教育費は⻑男Cさんの進路希望等により⼤きく変わります。特に、⼤学進学をする場合、国 公⽴と私⽴、⾃宅と下宿などの違いにより、学費等に⼤きな差異が⽣じます。教育費の概算額 は、⽂部科学省等の統計データや各⽣命保険会社の資料等で確認することができますので、参 考にしてみるとよいと思います"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5283,7 +5283,7 @@ const rankedQuestions = {
         "text": "保険期間中にX社に緊急の資⾦需要が発⽣した場合、契約者貸付制度を活⽤することができ ます。契約者貸付を利⽤できる上限は、利⽤時点での解約返戻⾦相当額となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5323,7 +5323,7 @@ const rankedQuestions = {
         "text": "3）⾼校⽣の⼆男Dさんは、控除対象扶養親族に該当しないため、Aさんは、⼆男Dさんについて 扶養控除の適⽤を受けることができません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -5343,7 +5343,7 @@ const rankedQuestions = {
         "text": "500万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5427,7 +5427,7 @@ const rankedQuestions = {
         "text": "賃貸アパートの経営による不動産所得の⾦額の計算上損失が⽣じ、他の各種所得の⾦額と損益 通算を⾏う場合、その損失の⾦額のうち、甲⼟地を取得するために要した負債の利⼦の額に相 当する部分の⾦額は、損益通算の対象とならない。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5471,7 +5471,7 @@ const rankedQuestions = {
         "text": "仮に、Aさんの死亡後に妻Bさんが再婚した場合でも、妻Bさんは、Aさんの死亡に係る遺族 厚⽣年⾦を継続して受給することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5491,7 +5491,7 @@ const rankedQuestions = {
         "text": "同⼀⽉に、同⼀医療機関等の窓⼝で⽀払った医療費の⼀部負担⾦等の額が⾃⼰負担限度額を 超える場合は、所定の⼿続により、⾃⼰負担限度額を超えた額が⾼額療養費として⽀給されま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -5511,7 +5511,7 @@ const rankedQuestions = {
         "text": "3）⻑男Cさんの⼤学進学時に独⽴⾏政法⼈⽇本学⽣⽀援機構が取り扱う奨学⾦制度を利⽤する ことも検討事項の１つとなります。当該奨学⾦制度には、返済義務のない第⼀種奨学⾦と返済 義務のある第⼆種奨学⾦があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5551,7 +5551,7 @@ const rankedQuestions = {
         "text": "3）Aさんが確定申告を⾏う場合の確定申告書の提出先は、原則として、Aさんの住所地を管轄す る税務署⻑です"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 18.3,
@@ -5655,7 +5655,7 @@ const rankedQuestions = {
         "text": "仮に、Aさんが介護保険の保険給付を受けようとする場合は、要介護状態または要⽀援状態 に該当することおよびその該当する要介護状態区分または要⽀援状態区分について、都道府県 知事の認定を受ける必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5679,7 +5679,7 @@ const rankedQuestions = {
         "text": "必要保障額の算出は、死亡保障が不⾜する事態を回避し、かつ、過剰な保険料⽀出を抑制す るための判断材料となります。 『妻Bさんの就職』 『⻑男Cさんの進学』など、節⽬となるライ フイベントが発⽣するタイミングで、必要保障額を再計算しましょう"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5699,7 +5699,7 @@ const rankedQuestions = {
         "text": "必要保障額は、通常、⻑男Cさんの成⻑とともに増加していきます。したがって、必要保障 額に⾒合うように年⾦受取総額が逓増する収⼊保障保険に加⼊することも検討事項の１つとな るでしょう"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5779,7 +5779,7 @@ const rankedQuestions = {
         "text": "⾃筆証書による遺⾔書は、遺⾔者が、その全⽂、⽇付および⽒名のすべてを⾃書し、これに 押印する⽅式で作成されるものであり、財産⽬録以外をパソコン等で作成したものは無効とな ります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -5803,7 +5803,7 @@ const rankedQuestions = {
         "text": "① 第１号被保険者 ② 翌⽉末⽇ ③ ２年度分"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5867,7 +5867,7 @@ const rankedQuestions = {
         "text": "社債Xは、既発⾏の固定利付債であるため、⼀般に、市場⾦利の低下は社債Xの価格の下落要 因になると考えられます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -5887,7 +5887,7 @@ const rankedQuestions = {
         "text": "Aさんが賃借⼈と普通借家契約を締結した場合、Aさんからの普通借家契約の更新拒絶は、正 当の事由がある場合でなければすることができない。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 7.5,
@@ -5951,7 +5951,7 @@ const rankedQuestions = {
         "text": "必要保障額を計算するうえで、遺族の収⼊⾒込⾦額に含まれる公的年⾦の遺族給付の概要を 正しく把握する必要があります。仮に、現時点でAさんが死亡した場合、妻Bさんが65歳にな るまで遺族基礎年⾦が⽀給されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -5991,7 +5991,7 @@ const rankedQuestions = {
         "text": "X社がAさんに⽀給する役員退職⾦のうち、役員退職⾦の額として相当であると認められる額 を超える部分については、法⼈税法上、損⾦の額に算⼊されません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6031,7 +6031,7 @@ const rankedQuestions = {
         "text": "3）⺟Dさんの合計所得⾦額は58万円以下であるため、Aさんは⺟Dさんに係る扶養控除の適⽤を 受けることができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -6051,7 +6051,7 @@ const rankedQuestions = {
         "text": "9,000万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -6071,7 +6071,7 @@ const rankedQuestions = {
         "text": "① 報酬⽐例部分 ② 加給年⾦額 ③ 振替加算"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6091,7 +6091,7 @@ const rankedQuestions = {
         "text": "Aさんの国⺠年⾦の任意未加⼊期間は、保険料全額免除期間とみなされて、⽼齢基礎年⾦の 年⾦額に反映されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6111,7 +6111,7 @@ const rankedQuestions = {
         "text": "指値注⽂により国内上場株式を買い付ける場合、指値注⽂は成⾏注⽂に優先するため、売買 が成⽴しやすくなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -6135,7 +6135,7 @@ const rankedQuestions = {
         "text": "Aさんが物件Yの購⼊に際して、Xさんとの間で売主は契約不適合責任を負わないとする 旨の特約を付けて売買契約を締結した場合、その特約は原則として無効である。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6239,7 +6239,7 @@ const rankedQuestions = {
         "text": "Aさんが加⼊している終⾝保険の予定利率は、契約時期から判断して、現在よりも⾼いこと が推察されます。終⾝保険を新たな定期保険等に転換した場合、元契約の予定利率は引き継が れますので、予定利率の⾼い終⾝保険の⾒直しには契約転換制度が有効です"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6259,7 +6259,7 @@ const rankedQuestions = {
         "text": "3）X社が受け取る解約返戻⾦は、Aさんに⽀給する役員退職⾦の原資として活⽤するほか、借⼊ ⾦の返済や設備投資等の事業資⾦としても活⽤することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6279,7 +6279,7 @@ const rankedQuestions = {
         "text": "相続⼈である妻Bさんが⾃筆証書による遺⾔書を発⾒し、家庭裁判所の検認を受ける前に開 封した場合、その遺⾔書は無効となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6395,7 +6395,7 @@ const rankedQuestions = {
         "text": "現在加⼊している⽣命保険契約を払済終⾝保険に変更すれば、⼊院特約などの各種特約は消 滅しますが、以後の保険料負担はなく、現在の契約と同額の死亡保険⾦額を確保することがで きます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6435,7 +6435,7 @@ const rankedQuestions = {
         "text": "お⺟さまが受け取る死亡退職⾦は、 『500万円×法定相続⼈の数』の算式により計算した⾦額 までは⾮課税財産となり、相続税の課税価格に算⼊されません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -6499,7 +6499,7 @@ const rankedQuestions = {
         "text": "６万6,000円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6563,7 +6563,7 @@ const rankedQuestions = {
         "text": "Aさんは、国⺠年⾦基⾦に加⼊して掛⾦を⽀払うことにより、⽼齢年⾦を受給することがで きます。また、国⺠年⾦基⾦の掛⾦は、税法上、全額が所得控除の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -6583,7 +6583,7 @@ const rankedQuestions = {
         "text": "⽶国の⾦利が上昇し、⽇本の⾦利が低下した場合、⽶ドル建投資の魅⼒が増すことから、円 を売却し⽶ドルを購⼊する動きが加速し、その結果、円⾼・⽶ドル安となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6603,7 +6603,7 @@ const rankedQuestions = {
         "text": "① 源泉分離課税 ② 雑所得 ③ できません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6711,7 +6711,7 @@ const rankedQuestions = {
         "text": "がん保険には、がんと診断されて診断給付⾦が⽀払われ、そのがんが治癒した後にがんが再 発した場合に、診断給付⾦が再度⽀払われる商品もあります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -6820,7 +6820,7 @@ const allRankedQuestions = [
         "text": "3）相続税の申告書は、原則として、相続の開始があったことを知った⽇の翌⽇から６カ⽉以内 に、被相続⼈であるAさんの死亡時の住所地を所轄する税務署⻑に提出しなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -6844,7 +6844,7 @@ const allRankedQuestions = [
         "text": "Aさんは、⼤学在学中に学⽣納付特例制度の適⽤を受けていた期間に係る保険料をこれから 納付することができます。保険料を追納すれば、将来受給する⽼齢基礎年⾦の額を増やすこと ができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 7.5,
@@ -6908,7 +6908,7 @@ const allRankedQuestions = [
         "text": "⽣命保険料控除は、勤務先の年末調整において適⽤を受けることができず、適⽤を受けるた めには所得税の確定申告を⾏う必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -6996,7 +6996,7 @@ const allRankedQuestions = [
         "text": "建設協⼒⾦⽅式により建設した店舗の賃貸借契約は、契約の更新がなく、借主であるX社が 賃貸借契約満了時に店舗を撤去し、貸主であるAさんに甲⼟地を更地で返還することが保証さ れています"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7016,7 +7016,7 @@ const allRankedQuestions = [
         "text": "相続⼈が⾃宅に保管されていた⾃筆証書遺⾔を発⾒した場合、相続⼈は、遅滞なく、⾃筆証 書遺⾔を簡易裁判所に提出して、その検認を請求しなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7036,7 +7036,7 @@ const allRankedQuestions = [
         "text": "795,000円×480⽉/480⽉"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7080,7 +7080,7 @@ const allRankedQuestions = [
         "text": "契約転換制度を活⽤して定期保険特約付終⾝保険を転換し、医療保障や介護保障を準備する ⽅法が考えられます。転換後契約の保険料は転換前契約の加⼊時の年齢により算出されますの で、新規に加⼊するよりも保険料負担を抑えることができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7120,7 +7120,7 @@ const allRankedQuestions = [
         "text": "当該養⽼保険の⽀払保険料は、その全額を福利厚⽣費として損⾦の額に算⼊することができ ます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7160,7 +7160,7 @@ const allRankedQuestions = [
         "text": "⾃筆証書遺⾔を作成した場合、遺⾔者は、作成した遺⾔書をあらかじめ家庭裁判所に提出 し、その有効性について確認を受けておく必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7204,7 +7204,7 @@ const allRankedQuestions = [
         "text": "0.60％"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7264,7 +7264,7 @@ const allRankedQuestions = [
         "text": "3）国⺠年⾦の第１号被保険者は、国⺠年⾦基⾦に加⼊することができますが、国⺠年⾦基⾦に 加⼊した場合は、国⺠年⾦の付加保険料を納付することができません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7324,7 +7324,7 @@ const allRankedQuestions = [
         "text": "570万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7424,7 +7424,7 @@ const allRankedQuestions = [
         "text": "3）Aさんは、⺟Dさんに係る扶養控除の適⽤を受けることができ、その控除額は58万円です"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7444,7 +7444,7 @@ const allRankedQuestions = [
         "text": "595万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7484,7 +7484,7 @@ const allRankedQuestions = [
         "text": "⾃宅の敷地と賃貸マンションの敷地について、 『⼩規模宅地等についての相続税の課税価格の 計算の特例』の適⽤を受けようとする場合、適⽤対象⾯積は所定の算式により調整され、完全 併⽤はできません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -7504,7 +7504,7 @@ const allRankedQuestions = [
         "text": "Aさんが⽼齢基礎年⾦の繰上げ⽀給の請求をする場合、その請求と同時に⽼齢厚⽣年⾦の繰 上げ⽀給の請求をしなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7564,7 +7564,7 @@ const allRankedQuestions = [
         "text": "496万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7692,7 +7692,7 @@ const allRankedQuestions = [
         "text": "Aさんが65歳から受給することができる⽼齢厚⽣年⾦の額には、妻Bさんが65歳になるまで の間、配偶者の加給年⾦額が加算されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7796,7 +7796,7 @@ const allRankedQuestions = [
         "text": "3）① 終⾝ ② 68,000円 ③ 社会保険料控除"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7904,7 +7904,7 @@ const allRankedQuestions = [
         "text": "3）Aさんが65歳から受給することができる⽼齢厚⽣年⾦には、妻Bさんが65歳になるまでの 間、加給年⾦額が加算されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7964,7 +7964,7 @@ const allRankedQuestions = [
         "text": "3）最近では、うつ病などの精神疾患による就業不能を保障の対象とする保険商品も販売されて います。各⽣命保険会社が取り扱う就業不能保険の保障内容や⽀払基準をよく確認したうえ で、加⼊の可否をご検討ください"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -7984,7 +7984,7 @@ const allRankedQuestions = [
         "text": "⽣命保険料控除は、⽣命保険に加⼊した年分については勤務先の年末調整で適⽤を受けるこ とができませんので、適⽤を受けるためには、所得税の確定申告が必要となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8004,7 +8004,7 @@ const allRankedQuestions = [
         "text": "現時点で当該⽣命保険を払済終⾝保険に変更する場合、契約は継続するため、経理処理は必 要ありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8044,7 +8044,7 @@ const allRankedQuestions = [
         "text": "5,400万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "B",
     "importance_weight": 75.0,
@@ -8064,7 +8064,7 @@ const allRankedQuestions = [
         "text": "① 65歳 ② 原因を問わず ③ ２割"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -8128,7 +8128,7 @@ const allRankedQuestions = [
         "text": "Aさんが、甲⼟地についてX社と事業⽤定期借地権の設定契約を締結する場合、その契約は、 公正証書によってしなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -8208,7 +8208,7 @@ const allRankedQuestions = [
         "text": "介護保障を検討する際には、保険⾦額に加え、保険⾦等の⽀払事由が保険会社独⾃のもの か、公的介護保険等の社会保障制度と連動しているものか等、どのような場合に保険⾦や給付 ⾦が⽀払われるか、加⼊前に確認しておきましょう"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8228,7 +8228,7 @@ const allRankedQuestions = [
         "text": "Aさんが健康保険の任意継続被保険者とならなかった場合は、国⺠健康保険に加⼊します。A さんが国⺠健康保険に加⼊した場合、妻Bさんを国⺠健康保険の被扶養者とすることができま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -8252,7 +8252,7 @@ const allRankedQuestions = [
         "text": "X社が契約者貸付制度を利⽤し、契約者貸付⾦を受け取った場合、当該終⾝保険契約は継続 しているため、経理処理は必要ありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8292,7 +8292,7 @@ const allRankedQuestions = [
         "text": "８万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8312,7 +8312,7 @@ const allRankedQuestions = [
         "text": "公正証書遺⾔は、証⼈２⼈以上の⽴会いのもと、遺⾔者が遺⾔の趣旨を公証⼈に⼝授し、公 証⼈がこれを筆記して作成するものです"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8332,7 +8332,7 @@ const allRankedQuestions = [
         "text": "8,700万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -8352,7 +8352,7 @@ const allRankedQuestions = [
         "text": "3）780,900円×540⽉ 480⽉"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8460,7 +8460,7 @@ const allRankedQuestions = [
         "text": "遺族基礎年⾦および遺族厚⽣年⾦は、雑所得として総合課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8508,7 +8508,7 @@ const allRankedQuestions = [
         "text": "個⼈事業主となったAさんが⽣活習慣病等で働けなくなった場合、会社員のときよりも収⼊ が減少するリスクが⾼くなると思われます。そのため、治療費の準備に加えて、働けなくなっ た場合の所得補償の準備もご検討ください"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -8548,7 +8548,7 @@ const allRankedQuestions = [
         "text": "公正証書遺⾔は、証⼈２⼈以上の⽴会いのもと、遺⾔者が遺⾔の趣旨を公証⼈に⼝授し、公 証⼈がこれを筆記して作成します"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8568,7 +8568,7 @@ const allRankedQuestions = [
         "text": "90万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -8592,7 +8592,7 @@ const allRankedQuestions = [
         "text": "① 70,000円 ② 全額 ③ 退職所得"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 26.7,
@@ -8660,7 +8660,7 @@ const allRankedQuestions = [
         "text": "妻Bさんが65歳から⽼齢基礎年⾦を受給する場合、⽼齢基礎年⾦の額に振替加算額が加算さ れます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8808,7 +8808,7 @@ const allRankedQuestions = [
         "text": "孫Fさんおよび孫Gさんは、相続税額の２割加算の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -8828,7 +8828,7 @@ const allRankedQuestions = [
         "text": "780,900円×480⽉ 480⽉"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8848,7 +8848,7 @@ const allRankedQuestions = [
         "text": "3）⼀時払養⽼保険の満期保険⾦に係る保険差益は、源泉分離課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8892,7 +8892,7 @@ const allRankedQuestions = [
         "text": "Aさんが、がんに罹患し、三⼤疾病⼀時⾦特約から⼀時⾦を受け取った場合、当該⼀時⾦は ⼀時所得として総合課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -8912,7 +8912,7 @@ const allRankedQuestions = [
         "text": "① ４ ② ３分の２ ③ １年６カ⽉"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -8932,7 +8932,7 @@ const allRankedQuestions = [
         "text": "Aさんが死亡した場合にX社が受け取る死亡保険⾦は、借⼊⾦の返済等の事業資⾦として活⽤ することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -8952,7 +8952,7 @@ const allRankedQuestions = [
         "text": "590万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9016,7 +9016,7 @@ const allRankedQuestions = [
         "text": "3）遺産分割をめぐる争いを防ぐ⼿段として、公正証書遺⾔の作成をお勧めします。公正証書遺 ⾔は証⼈２⼈以上の⽴会いのもと、遺⾔者が遺⾔の趣旨を公証⼈に⼝授し、公証⼈がこれを筆 記して作成します"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9064,7 +9064,7 @@ const allRankedQuestions = [
         "text": "① 特定疾病が原因で ② ３ ③ ⾼額療養費"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9104,7 +9104,7 @@ const allRankedQuestions = [
         "text": "急な資⾦需要の発⽣により、X社が契約者貸付制度を利⽤した場合、当該終⾝保険契約は継 続しているため、経理処理は必要ありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9124,7 +9124,7 @@ const allRankedQuestions = [
         "text": "3）Aさんが⽀払っている⻑⼥Cさんの国⺠年⾦の保険料は、その全額がAさんの社会保険料控除 の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -9148,7 +9148,7 @@ const allRankedQuestions = [
         "text": "690万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 18.3,
@@ -9168,7 +9168,7 @@ const allRankedQuestions = [
         "text": "3）Aさんが⻑⼥Cさんに現⾦を贈与し、⻑⼥Cさんが相続時精算課税制度を選択した場合、その 選択をした年分以降にAさんから⻑⼥Cさんへ贈与する財産について、暦年課税へ変更するこ とはできません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "B",
     "importance_weight": 60.0,
@@ -9252,7 +9252,7 @@ const allRankedQuestions = [
         "text": "甲⼟地と⼄⼟地を⼀体とした⼟地に賃貸マンションを建築する場合、⼄⼟地単独での有効活 ⽤に⽐べて、上限となる容積率が⼤きくなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -9292,7 +9292,7 @@ const allRankedQuestions = [
         "text": "3）Aさんが、がんと診断確定され、がん⼀時⾦特約から⼀時⾦を受け取った場合、当該⼀時⾦ は⼀時所得として総合課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -9332,7 +9332,7 @@ const allRankedQuestions = [
         "text": "① ができます ② 全額 ③ 契約者である法⼈"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9372,7 +9372,7 @@ const allRankedQuestions = [
         "text": "Aさんは、⽼後の年⾦収⼊を増やすために、確定拠出年⾦の個⼈型年⾦に加⼊することがで きます。将来の年⾦額は、Aさんの指図に基づく運⽤実績により左右されますので、年⾦の受 取総額が拠出した掛⾦の合計額を下回る可能性がある点に留意する必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9420,7 +9420,7 @@ const allRankedQuestions = [
         "text": "建設協⼒⾦⽅式により建設した店舗の賃貸借契約は、契約の更新がありません。賃貸借契約 では、借主であるX社が賃貸借契約満了後に店舗を撤去し、貸主であるAさんに甲⼟地を更地 で返還することが保証されています"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9440,7 +9440,7 @@ const allRankedQuestions = [
         "text": "事業⽤定期借地権⽅式により、Aさんが甲⼟地をX社に賃貸した後にAさんの相続が開始した 場合、相続税の課税価格の計算上、甲⼟地は⾃⽤地として評価されますので、相続税額の軽減 効果はありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -9480,7 +9480,7 @@ const allRankedQuestions = [
         "text": "個⼈型年⾦の留意点として、加⼊時や運⽤期間中に各種の⼿数料がかかることや、年⾦資産 の運⽤リスクは加⼊者が負うことなどが挙げられます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -9564,7 +9564,7 @@ const allRankedQuestions = [
         "text": "3）700万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 18.3,
@@ -9628,7 +9628,7 @@ const allRankedQuestions = [
         "text": "定期借家契約を締結する際は、公正証書により⾏わなければなりません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9736,7 +9736,7 @@ const allRankedQuestions = [
         "text": "⽣命保険料控除は、加⼊した年については勤務先の年末調整で適⽤を受けることができませ んので、適⽤を受けるためには、所得税の確定申告が必要となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9848,7 +9848,7 @@ const allRankedQuestions = [
         "text": "介護保険の居宅サービスを利⽤する場合、要介護度に応じて利⽤できる限度額が決められて おり、限度額を超えて利⽤したサービスの費⽤は、全額⾃⼰負担となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9868,7 +9868,7 @@ const allRankedQuestions = [
         "text": "Aさんが介護⼀時⾦特約から⼀時⾦を受け取った場合、当該⼀時⾦は、⼀時所得の収⼊⾦額 として総合課税の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9908,7 +9908,7 @@ const allRankedQuestions = [
         "text": "福利厚⽣プランを導⼊する際は、退職⾦の⽀給根拠を明確にするため、退職⾦規程を整えて ください"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -9948,7 +9948,7 @@ const allRankedQuestions = [
         "text": "3）⾃宅の敷地を妻Bさんが相続により取得した場合、当該敷地を相続税の申告期限前に売却し た場合であっても『⼩規模宅地等についての相続税の課税価格の計算の特例』の適⽤を受ける ことができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 47.5,
@@ -9968,7 +9968,7 @@ const allRankedQuestions = [
         "text": "855万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "B",
     "importance_weight": 75.0,
@@ -10008,7 +10008,7 @@ const allRankedQuestions = [
         "text": "3）仮に、満期時の為替レートが円⾼ドル安になり、為替差損が⽣じた場合、当該損失の⾦額は Aさんの不動産所得の⾦額と損益通算することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10028,7 +10028,7 @@ const allRankedQuestions = [
         "text": "① 貸家建付地 ② 50％ ③ ６分の１"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -10068,7 +10068,7 @@ const allRankedQuestions = [
         "text": "介護保険の介護給付を受けようとする場合は、要介護者に該当することおよびその該当する 要介護状態区分について、都道府県知事の認定を受ける必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -10088,7 +10088,7 @@ const allRankedQuestions = [
         "text": "保険会社各社は、⼊院給付⾦や⼿術給付⾦が定額で受け取れるものや通院保障が⼿厚いもの など、最近の医療事情に合わせて、さまざまなタイプの医療保険を取り扱っています。保障内 容や保障範囲をしっかりと確認したうえで、加⼊することをお勧めします"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -10128,7 +10128,7 @@ const allRankedQuestions = [
         "text": "3）会社員であるAさんが所得税の確定申告をする場合、確定申告書はAさんの勤務先を経由し て、勤務先の住所地の所轄税務署⻑に提出することになります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10148,7 +10148,7 @@ const allRankedQuestions = [
         "text": "公正証書遺⾔は、作成された遺⾔書の原本が公証役場に保管されるため、紛失や改ざんのお それがなく、安全性が⾼い遺⾔といえます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10188,7 +10188,7 @@ const allRankedQuestions = [
         "text": "3）Aさんが65歳から受給することができる⽼齢厚⽣年⾦の額には、妻Bさんが60歳になるまで の間、配偶者の加給年⾦額が加算されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10228,7 +10228,7 @@ const allRankedQuestions = [
         "text": "3）X社が当該⽣命保険契約を⻑男Bさんが65歳のときに解約した場合、解約時点における資産 計上額を取り崩し、解約返戻⾦額との差額を雑損失として、その事業年度の損⾦の額に算⼊し ます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10248,7 +10248,7 @@ const allRankedQuestions = [
         "text": "⻑男Bさんが重い病気等で⼀定期間働けなくなった場合の業績悪化の可能性を考え、⻑男Bさ んが重い病気等になった場合にX社が⼀時⾦を受け取ることができる⽣前給付タイプの⽣命保 険に加⼊されることも検討事項の１つとなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10272,7 +10272,7 @@ const allRankedQuestions = [
         "text": "3）450万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "B",
     "importance_weight": 75.0,
@@ -10316,7 +10316,7 @@ const allRankedQuestions = [
         "text": "Aさんが病気やケガによる療養のために、連続４⽇以上、業務に就くことができず、当該期 間について事業主から報酬が⽀払われない場合は、所定の⼿続により、傷病⼿当⾦が療養を開 始した⽇から起算して３年を限度として⽀給されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -10380,7 +10380,7 @@ const allRankedQuestions = [
         "text": "保険会社各社は、⼊院給付⾦や⼿術給付⾦が定額で受け取れるタイプの医療保険や通院保障 が⼿厚いものなど、最近の医療事情に合わせて、さまざまなタイプの医療保険を取り扱ってい ます。保障内容や保障範囲をしっかりと確認したうえで、加⼊を検討されることをお勧めしま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -10400,7 +10400,7 @@ const allRankedQuestions = [
         "text": "3）急な資⾦需要の発⽣により、X社が当該⽣命保険から契約者貸付制度を利⽤した場合、契約 者貸付⾦の全額を借⼊⾦として負債に計上する必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10440,7 +10440,7 @@ const allRankedQuestions = [
         "text": "3）5,400万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -10460,7 +10460,7 @@ const allRankedQuestions = [
         "text": "3）Aさんが60歳以後も雇⽤保険の⼀般被保険者としてX社に勤務し、65歳で退職した場合は、 所定の⼿続により、雇⽤保険から⾼年齢求職者給付⾦を受給することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10508,7 +10508,7 @@ const allRankedQuestions = [
         "text": "仮に、Aさんが登記の記載事項を信頼して甲⼟地を購⼊し、記載されていた登記名義⼈が真実 の権利者ではなかった場合であっても、原則として、Aさんは、甲⼟地に対する所有権を取得 することができる。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -10552,7 +10552,7 @@ const allRankedQuestions = [
         "text": "① 無効 ② 不要 ③ 必要"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10596,7 +10596,7 @@ const allRankedQuestions = [
         "text": "3）Aさんが65歳以後に受給する⽼齢厚⽣年⾦には、妻Bさんが65歳に達するまでの間、配偶者 の加給年⾦額が加算されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10660,7 +10660,7 @@ const allRankedQuestions = [
         "text": "保険期間開始時から当該保険期間の６割に相当する期間においては、⽀払保険料の２分の１ を前払保険料として資産に計上し、残りの⽀払保険料については、期間の経過に応じて損⾦の 額に算⼊します"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10704,7 +10704,7 @@ const allRankedQuestions = [
         "text": "⾃筆証書遺⾔は、秘密が保持できること、⼿続が簡便であること等のメリットがあります。 ⼀⽅、紛失や偽造の可能性があること、遺⾔の内容が不明瞭である場合、相続⼈間で無⽤なト ラブルを⽣じさせる可能性があること等のデメリットがあります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10724,7 +10724,7 @@ const allRankedQuestions = [
         "text": "相続財産の⼤半が不動産であり、現物分割が難しい場合、⾃宅および賃貸アパートを取得す る⻑男Cさんが、その代償として⼆男Dさんに⾦銭を⽀払うという分割の⽅法が考えられます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10768,7 +10768,7 @@ const allRankedQuestions = [
         "text": "遺族基礎年⾦や遺族厚⽣年⾦は、Aさんが亡くなった後、妻Bさんが再就職をして収⼊を得る ようになった場合でも、その給与収⼊によって年⾦額の減額や受給権が消滅することはありま せん"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10880,7 +10880,7 @@ const allRankedQuestions = [
         "text": "3）保険期間中に被保険者であるAさんが死亡した場合、X社はそれまでに資産計上していた前払 保険料を取り崩して、受け取った死亡保険⾦との差額を雑損失として損⾦の額に算⼊します"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10900,7 +10900,7 @@ const allRankedQuestions = [
         "text": "当該⽣命保険の払込保険料は、全額を損⾦の額に算⼊します。したがって、保険期間中に当 該⽣命保険を解約し、解約返戻⾦を受け取った場合、X社では、経理処理の必要はありません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10968,7 +10968,7 @@ const allRankedQuestions = [
         "text": "Aさんは⽼齢厚⽣年⾦の⽀給開始を66歳以後に繰り下げることができますが、⽼齢厚⽣年⾦ の繰下げ⽀給の申出は、⽼齢基礎年⾦の繰下げ⽀給の申出と同時に⾏う必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -10992,7 +10992,7 @@ const allRankedQuestions = [
         "text": "国内上場株式の売買において、通常、成⾏注⽂は指値注⽂に優先するため、売買が成⽴しや すくなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -11040,7 +11040,7 @@ const allRankedQuestions = [
         "text": "甲マンションは中古マンションであるため、所得税の住宅借⼊⾦等特別控除の適⽤対象とはな らない。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 18.3,
@@ -11080,7 +11080,7 @@ const allRankedQuestions = [
         "text": "公正証書遺⾔は、遺⾔者が、公証役場において遺⾔の趣旨を公証⼈に⼝授し、公証⼈がそれを 筆記して作成する遺⾔であり、証⼈１⼈以上の⽴会いにより作成することができる。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11140,7 +11140,7 @@ const allRankedQuestions = [
         "text": "3）遺族の収⼊⾒込⾦額を計算する際には、公的年⾦の遺族給付のおおよその⾦額を把握するこ とが必要です。そのほか、妻Bさんの就労収⼊については、現実的な範囲内の⾦額を⾒込んで おくとよいでしょう"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11160,7 +11160,7 @@ const allRankedQuestions = [
         "text": "3）総合医療特約において、疾病・災害⼊院給付⾦、⼿術給付⾦等の保障は準備されています が、がん保障に特化したものや退院後の通院保障など、Aさんのニーズに合わせて医療保障を 充実させることも検討事項の１つになります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11180,7 +11180,7 @@ const allRankedQuestions = [
         "text": "Aさんの葬儀費⽤や⼦どもの教育資⾦は、終⾝保険や定期保険特約等の⼀時⾦タイプで準備 し、残されたご家族の⽣活費は収⼊保障特約等の年⾦タイプで準備するなど、ご遺族の⽣活設 計に応じて保障内容を組み⽴てることをお勧めします"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11296,7 +11296,7 @@ const allRankedQuestions = [
         "text": "790万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11316,7 +11316,7 @@ const allRankedQuestions = [
         "text": "⼟地・家屋の固定資産税の納税義務者は、毎年４⽉１⽇現在で所有者として固定資産課税台帳 に登録されている者であるが、実務上、売買契約により、売主と買主の間で固定資産税の負担 割合を所有期間で按分して精算するのが⼀般的である。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11340,7 +11340,7 @@ const allRankedQuestions = [
         "text": "① 地積 ② 住宅性能評価 ③ 所有権"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -11384,7 +11384,7 @@ const allRankedQuestions = [
         "text": "X社がAさんに⽀給する役員退職⾦のうち、役員退職⾦の額として相当であると認められる額 を超える部分については、法⼈税法上、損⾦の額に算⼊されません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11404,7 +11404,7 @@ const allRankedQuestions = [
         "text": "X社が当該保険契約を⻑男Bさんが65歳のときに解約した場合、解約時点における資産計上 額を取り崩し、解約返戻⾦額との差額を雑損失として、その事業年度の損⾦の額に計上しま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11424,7 +11424,7 @@ const allRankedQuestions = [
         "text": "Aさんが公正証書遺⾔を作成する場合、証⼈２⼈以上の⽴会いが必要となりますが、妻Bさん は証⼈になることはできません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11464,7 +11464,7 @@ const allRankedQuestions = [
         "text": "Aさんは、国⺠年⾦基⾦に加⼊して掛⾦を⽀払うことにより、⽼齢年⾦を受給することがで きます。国⺠年⾦基⾦の掛⾦は、税法上、全額が所得控除の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -11484,7 +11484,7 @@ const allRankedQuestions = [
         "text": "指値注⽂により国内上場株式を買い付ける場合、指値注⽂は成⾏注⽂に優先するため、売買 が成⽴しやすくなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -11504,7 +11504,7 @@ const allRankedQuestions = [
         "text": "3）X社は過去３年間、増収増益を達成していることから、X社株式の株価は今後必ず上昇します ので、ご購⼊をお勧めします"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -11592,7 +11592,7 @@ const allRankedQuestions = [
         "text": "保険期間中にX社に緊急の資⾦需要が⽣じた場合、契約者貸付制度を活⽤することができま す。ただし、契約者貸付を利⽤できる上限は、利⽤時点での払込保険料相当額までとなりま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11656,7 +11656,7 @@ const allRankedQuestions = [
         "text": "Aさんが公正証書遺⾔を作成する場合の証⼈には、妻Bさんがなることはできませんが、⻑⼥ Cさんおよび⻑男Dさんは証⼈になることができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11676,7 +11676,7 @@ const allRankedQuestions = [
         "text": "3）① 600万円 ② 法定相続分 ③ 80％"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -11696,7 +11696,7 @@ const allRankedQuestions = [
         "text": "7,400万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -11720,7 +11720,7 @@ const allRankedQuestions = [
         "text": "雇⽤保険の⼀般被保険者であるAさんは、⾃ら費⽤を負担して、⾃⼰啓発のために厚⽣労働 ⼤⾂の指定する⼀般教育訓練を受講し修了した場合、⼀定の要件のもとに、教育訓練給付⾦を 受給することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11764,7 +11764,7 @@ const allRankedQuestions = [
         "text": "880万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11804,7 +11804,7 @@ const allRankedQuestions = [
         "text": "3）8,000万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -11848,7 +11848,7 @@ const allRankedQuestions = [
         "text": "3）教育費は⻑男Cさんの進路希望等により⼤きく変わります。特に、⼤学進学をする場合、国 公⽴と私⽴、⾃宅と下宿などの違いにより、学費等に⼤きな差異が⽣じます。教育費の概算額 は、⽂部科学省等の統計データや各⽣命保険会社の資料等で確認することができますので、参 考にしてみるとよいと思います"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11868,7 +11868,7 @@ const allRankedQuestions = [
         "text": "保険期間中にX社に緊急の資⾦需要が発⽣した場合、契約者貸付制度を活⽤することができ ます。契約者貸付を利⽤できる上限は、利⽤時点での解約返戻⾦相当額となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -11908,7 +11908,7 @@ const allRankedQuestions = [
         "text": "3）⾼校⽣の⼆男Dさんは、控除対象扶養親族に該当しないため、Aさんは、⼆男Dさんについて 扶養控除の適⽤を受けることができません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -11928,7 +11928,7 @@ const allRankedQuestions = [
         "text": "500万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12032,7 +12032,7 @@ const allRankedQuestions = [
         "text": "賃貸アパートの経営による不動産所得の⾦額の計算上損失が⽣じ、他の各種所得の⾦額と損益 通算を⾏う場合、その損失の⾦額のうち、甲⼟地を取得するために要した負債の利⼦の額に相 当する部分の⾦額は、損益通算の対象とならない。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12076,7 +12076,7 @@ const allRankedQuestions = [
         "text": "仮に、Aさんの死亡後に妻Bさんが再婚した場合でも、妻Bさんは、Aさんの死亡に係る遺族 厚⽣年⾦を継続して受給することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12096,7 +12096,7 @@ const allRankedQuestions = [
         "text": "同⼀⽉に、同⼀医療機関等の窓⼝で⽀払った医療費の⼀部負担⾦等の額が⾃⼰負担限度額を 超える場合は、所定の⼿続により、⾃⼰負担限度額を超えた額が⾼額療養費として⽀給されま す"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -12116,7 +12116,7 @@ const allRankedQuestions = [
         "text": "3）⻑男Cさんの⼤学進学時に独⽴⾏政法⼈⽇本学⽣⽀援機構が取り扱う奨学⾦制度を利⽤する ことも検討事項の１つとなります。当該奨学⾦制度には、返済義務のない第⼀種奨学⾦と返済 義務のある第⼆種奨学⾦があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12156,7 +12156,7 @@ const allRankedQuestions = [
         "text": "3）Aさんが確定申告を⾏う場合の確定申告書の提出先は、原則として、Aさんの住所地を管轄す る税務署⻑です"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 18.3,
@@ -12176,7 +12176,7 @@ const allRankedQuestions = [
         "text": "① ５⼈ ② 6,000万円 ③ 500万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 50.0,
@@ -12280,7 +12280,7 @@ const allRankedQuestions = [
         "text": "仮に、Aさんが介護保険の保険給付を受けようとする場合は、要介護状態または要⽀援状態 に該当することおよびその該当する要介護状態区分または要⽀援状態区分について、都道府県 知事の認定を受ける必要があります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12304,7 +12304,7 @@ const allRankedQuestions = [
         "text": "必要保障額の算出は、死亡保障が不⾜する事態を回避し、かつ、過剰な保険料⽀出を抑制す るための判断材料となります。 『妻Bさんの就職』 『⻑男Cさんの進学』など、節⽬となるライ フイベントが発⽣するタイミングで、必要保障額を再計算しましょう"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12324,7 +12324,7 @@ const allRankedQuestions = [
         "text": "必要保障額は、通常、⻑男Cさんの成⻑とともに増加していきます。したがって、必要保障 額に⾒合うように年⾦受取総額が逓増する収⼊保障保険に加⼊することも検討事項の１つとな るでしょう"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12404,7 +12404,7 @@ const allRankedQuestions = [
         "text": "⾃筆証書による遺⾔書は、遺⾔者が、その全⽂、⽇付および⽒名のすべてを⾃書し、これに 押印する⽅式で作成されるものであり、財産⽬録以外をパソコン等で作成したものは無効とな ります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -12428,7 +12428,7 @@ const allRankedQuestions = [
         "text": "① 第１号被保険者 ② 翌⽉末⽇ ③ ２年度分"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12492,7 +12492,7 @@ const allRankedQuestions = [
         "text": "社債Xは、既発⾏の固定利付債であるため、⼀般に、市場⾦利の低下は社債Xの価格の下落要 因になると考えられます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 21.7,
@@ -12536,7 +12536,7 @@ const allRankedQuestions = [
         "text": "Aさんが賃借⼈と普通借家契約を締結した場合、Aさんからの普通借家契約の更新拒絶は、正 当の事由がある場合でなければすることができない。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 7.5,
@@ -12624,7 +12624,7 @@ const allRankedQuestions = [
         "text": "必要保障額を計算するうえで、遺族の収⼊⾒込⾦額に含まれる公的年⾦の遺族給付の概要を 正しく把握する必要があります。仮に、現時点でAさんが死亡した場合、妻Bさんが65歳にな るまで遺族基礎年⾦が⽀給されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12664,7 +12664,7 @@ const allRankedQuestions = [
         "text": "X社がAさんに⽀給する役員退職⾦のうち、役員退職⾦の額として相当であると認められる額 を超える部分については、法⼈税法上、損⾦の額に算⼊されません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12704,7 +12704,7 @@ const allRankedQuestions = [
         "text": "3）⺟Dさんの合計所得⾦額は58万円以下であるため、Aさんは⺟Dさんに係る扶養控除の適⽤を 受けることができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -12748,7 +12748,7 @@ const allRankedQuestions = [
         "text": "9,000万円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -12768,7 +12768,7 @@ const allRankedQuestions = [
         "text": "① 報酬⽐例部分 ② 加給年⾦額 ③ 振替加算"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12788,7 +12788,7 @@ const allRankedQuestions = [
         "text": "Aさんの国⺠年⾦の任意未加⼊期間は、保険料全額免除期間とみなされて、⽼齢基礎年⾦の 年⾦額に反映されます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12808,7 +12808,7 @@ const allRankedQuestions = [
         "text": "指値注⽂により国内上場株式を買い付ける場合、指値注⽂は成⾏注⽂に優先するため、売買 が成⽴しやすくなります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 15.0,
@@ -12832,7 +12832,7 @@ const allRankedQuestions = [
         "text": "Aさんが物件Yの購⼊に際して、Xさんとの間で売主は契約不適合責任を負わないとする 旨の特約を付けて売買契約を締結した場合、その特約は原則として無効である。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12936,7 +12936,7 @@ const allRankedQuestions = [
         "text": "Aさんが加⼊している終⾝保険の予定利率は、契約時期から判断して、現在よりも⾼いこと が推察されます。終⾝保険を新たな定期保険等に転換した場合、元契約の予定利率は引き継が れますので、予定利率の⾼い終⾝保険の⾒直しには契約転換制度が有効です"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12956,7 +12956,7 @@ const allRankedQuestions = [
         "text": "3）X社が受け取る解約返戻⾦は、Aさんに⽀給する役員退職⾦の原資として活⽤するほか、借⼊ ⾦の返済や設備投資等の事業資⾦としても活⽤することができます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -12976,7 +12976,7 @@ const allRankedQuestions = [
         "text": "相続⼈である妻Bさんが⾃筆証書による遺⾔書を発⾒し、家庭裁判所の検認を受ける前に開 封した場合、その遺⾔書は無効となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -13092,7 +13092,7 @@ const allRankedQuestions = [
         "text": "現在加⼊している⽣命保険契約を払済終⾝保険に変更すれば、⼊院特約などの各種特約は消 滅しますが、以後の保険料負担はなく、現在の契約と同額の死亡保険⾦額を確保することがで きます"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -13132,7 +13132,7 @@ const allRankedQuestions = [
         "text": "お⺟さまが受け取る死亡退職⾦は、 『500万円×法定相続⼈の数』の算式により計算した⾦額 までは⾮課税財産となり、相続税の課税価格に算⼊されません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 25.0,
@@ -13196,7 +13196,7 @@ const allRankedQuestions = [
         "text": "６万6,000円"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -13280,7 +13280,7 @@ const allRankedQuestions = [
         "text": "Aさんは、国⺠年⾦基⾦に加⼊して掛⾦を⽀払うことにより、⽼齢年⾦を受給することがで きます。また、国⺠年⾦基⾦の掛⾦は、税法上、全額が所得控除の対象となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 20.0,
@@ -13300,7 +13300,7 @@ const allRankedQuestions = [
         "text": "⽶国の⾦利が上昇し、⽇本の⾦利が低下した場合、⽶ドル建投資の魅⼒が増すことから、円 を売却し⽶ドルを購⼊する動きが加速し、その結果、円⾼・⽶ドル安となります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -13320,7 +13320,7 @@ const allRankedQuestions = [
         "text": "① 源泉分離課税 ② 雑所得 ③ できません"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
@@ -13380,7 +13380,7 @@ const allRankedQuestions = [
         "text": "Aさんが建築した賃貸アパートの建物について所有権の保存登記を⾏う場合、登録免許税は課 されない。"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "C",
     "importance_weight": 30.0,
@@ -13468,7 +13468,7 @@ const allRankedQuestions = [
         "text": "がん保険には、がんと診断されて診断給付⾦が⽀払われ、そのがんが治癒した後にがんが再 発した場合に、診断給付⾦が再度⽀払われる商品もあります"
       }
     ],
-    "answerId": 1,
+    "answerId": 2,
     "explanation": "この問題の詳細な解説は元の過去問題集をご参照ください。",
     "rank": "D",
     "importance_weight": 0,
