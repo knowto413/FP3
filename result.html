@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>FP3級CBTデモ試験 - 結果</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>FP3級CBTデモ試験</h1>
+    </header>
+
+    <main class="result-page">
+        <div class="container">
+            <!-- 総合結果エリア -->
+            <section class="result-summary">
+                <div class="result-status" id="resultStatus">
+                    <!-- 合格/不合格がここに表示される -->
+                </div>
+                <div class="score-info">
+                    <h2 id="scoreText">あなたのスコア: -- 点</h2>
+                    <p id="scoreDetail">(10問中-問正解)</p>
+                    <p id="timeInfo">所要時間: --分--秒</p>
+                </div>
+            </section>
+
+            <!-- 問題別フィードバックエリア -->
+            <section class="detailed-results">
+                <h3>問題別結果</h3>
+                <div class="results-list" id="resultsList">
+                    <!-- 各問題の結果がここに表示される -->
+                </div>
+            </section>
+
+            <!-- CTAエリア -->
+            <section class="cta-section">
+                <button id="retryBtn" class="retry-btn">もう一度挑戦する</button>
+                <div class="share-buttons">
+                    <button id="twitterShare" class="share-btn twitter-btn">
+                        <span class="share-icon">🐦</span>
+                        Twitterでシェア
+                    </button>
+                    <button id="facebookShare" class="share-btn facebook-btn">
+                        <span class="share-icon">📘</span>
+                        Facebookでシェア
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FP3級CBTデモ試験. All rights reserved.</p>
+    </footer>
+
+    <script src="js/questions.js"></script>
+    <script src="js/extended_questions_2025.js"></script>
+    <script src="js/ranked_questions.js"></script>
+    <script src="js/translator.js"></script>
+    <script src="js/question-manager.js"></script>
+    <script src="js/result.js"></script>
+</body>
+</html>
