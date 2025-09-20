@@ -17,28 +17,40 @@ class ExamManager {
 
     async initializeQuestions() {
         try {
+            console.log('=== 問題初期化開始 ===');
+
+            // データの存在確認
+            console.log('writtenQuestions:', typeof writtenQuestions !== 'undefined' ? writtenQuestions.length : 'undefined');
+            console.log('practicalQuestions:', typeof practicalQuestions !== 'undefined' ? practicalQuestions.length : 'undefined');
+            console.log('allRankedQuestions:', typeof allRankedQuestions !== 'undefined' ? allRankedQuestions.length : 'undefined');
+            console.log('rankedQuestions:', typeof rankedQuestions !== 'undefined' ? Object.keys(rankedQuestions) : 'undefined');
+
             // 進捗バーでローディング表示
             await this.showLoadingWithProgress();
-            
+
             // 問題を生成（筆記10問+実技10問=20問）
             this.questions = await this.generateQuestions();
-            
+            console.log('生成された問題数:', this.questions ? this.questions.length : 0);
+
             // ローディング非表示
             await this.hideLoadingScreen();
-            
+
             // タイマー開始
             this.setupTimer();
-            
+
             // 問題が取得できた場合のみ表示
             if (this.questions && this.questions.length > 0) {
+                console.log('問題表示開始');
                 this.renderQuestion();
                 this.renderNavigation();
             } else {
+                console.error('問題データが空です');
                 this.showError('問題の読み込みに失敗しました。ページを再読み込みしてください。');
             }
-            
+
         } catch (error) {
             console.error('問題の初期化に失敗:', error);
+            console.error('エラー詳細:', error.stack);
             await this.hideLoadingScreen();
             this.showError('問題の読み込みに失敗しました。ページを再読み込みしてください。');
         }
@@ -46,36 +58,65 @@ class ExamManager {
 
     // 問題を生成（ランク重み付き、または完全ランダム）
     async generateQuestions() {
-        return new Promise((resolve) => {
-            let selectedQuestions = [];
+        return new Promise((resolve, reject) => {
+            try {
+                let selectedQuestions = [];
 
-            // ランク付き問題データが利用可能な場合
-            if (typeof allRankedQuestions !== 'undefined' && allRankedQuestions.length > 0) {
-                // 重要度重み付きランダム選択
-                selectedQuestions = this.getWeightedRandomQuestions(20);
-                console.log('ランク重み付き問題を生成しました');
-            } else {
-                // 従来の筆記10問+実技10問
-                const shuffledWritten = this.shuffleArray([...writtenQuestions]);
-                const selectedWritten = shuffledWritten.slice(0, 10);
+                // データの存在確認
+                const hasRankedData = typeof allRankedQuestions !== 'undefined' && allRankedQuestions && allRankedQuestions.length > 0;
+                const hasBasicData = typeof writtenQuestions !== 'undefined' && typeof practicalQuestions !== 'undefined';
 
-                const shuffledPractical = this.shuffleArray([...practicalQuestions]);
-                const selectedPractical = shuffledPractical.slice(0, 10);
+                console.log('データ確認:', {
+                    hasRankedData,
+                    hasBasicData,
+                    writtenCount: typeof writtenQuestions !== 'undefined' ? writtenQuestions.length : 0,
+                    practicalCount: typeof practicalQuestions !== 'undefined' ? practicalQuestions.length : 0
+                });
 
-                selectedQuestions = [...selectedWritten, ...selectedPractical];
-                console.log('従来方式で問題を生成しました');
+                // ランク付き問題データが利用可能な場合
+                if (hasRankedData) {
+                    // 重要度重み付きランダム選択
+                    selectedQuestions = this.getWeightedRandomQuestions(20);
+                    console.log('ランク重み付き問題を生成しました:', selectedQuestions.length);
+                } else if (hasBasicData) {
+                    // 従来の筆記10問+実技10問
+                    const shuffledWritten = this.shuffleArray([...writtenQuestions]);
+                    const selectedWritten = shuffledWritten.slice(0, 10);
+
+                    const shuffledPractical = this.shuffleArray([...practicalQuestions]);
+                    const selectedPractical = shuffledPractical.slice(0, 10);
+
+                    selectedQuestions = [...selectedWritten, ...selectedPractical];
+                    console.log('従来方式で問題を生成しました:', selectedQuestions.length);
+                } else {
+                    console.error('問題データが見つかりません');
+                    reject(new Error('問題データが見つかりません'));
+                    return;
+                }
+
+                if (selectedQuestions.length === 0) {
+                    console.error('選択された問題が0件です');
+                    reject(new Error('選択された問題が0件です'));
+                    return;
+                }
+
+                // IDを振り直し
+                const allQuestions = selectedQuestions.map((question, index) => ({
+                    ...question,
+                    id: index + 1
+                }));
+
+                console.log('最終的な問題数:', allQuestions.length);
+
+                // 少し遅延を入れてローディング画面を見せる
+                setTimeout(() => {
+                    resolve(allQuestions);
+                }, 100);
+
+            } catch (error) {
+                console.error('generateQuestions内でエラー:', error);
+                reject(error);
             }
-
-            // IDを振り直し
-            const allQuestions = selectedQuestions.map((question, index) => ({
-                ...question,
-                id: index + 1
-            }));
-
-            // 少し遅延を入れてローディング画面を見せる
-            setTimeout(() => {
-                resolve(allQuestions);
-            }, 100);
         });
     }
 
@@ -172,12 +213,46 @@ class ExamManager {
 
     // エラー表示
     showError(message) {
-        const errorDiv = document.createElement('div');
-        errorDiv.innerHTML = `<p style="color: red; text-align: center; font-size: 18px;">${message}</p>`;
-        const questionArea = document.querySelector('.question-area');
-        if (questionArea) {
-            questionArea.appendChild(errorDiv);
+        // ローディング画面を非表示
+        const loadingScreen = document.getElementById('loadingScreen');
+        if (loadingScreen) {
+            loadingScreen.style.display = 'none';
         }
+
+        // エラー表示エリアを作成
+        const errorDiv = document.createElement('div');
+        errorDiv.style.cssText = `
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border: 2px solid #ff4757;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        `;
+
+        errorDiv.innerHTML = `
+            <h2 style="color: #ff4757; margin: 0 0 15px 0;">エラーが発生しました</h2>
+            <p style="color: #333; margin: 0 0 15px 0; font-size: 16px;">${message}</p>
+            <button onclick="location.reload()" style="
+                background: #ff4757;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+            ">ページを再読み込み</button>
+            <div style="margin-top: 15px; font-size: 12px; color: #666;">
+                <p>開発者ツール（F12）のコンソールでエラー詳細を確認できます</p>
+            </div>
+        `;
+
+        document.body.appendChild(errorDiv);
     }
     
     initializeElements() {
