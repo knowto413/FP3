@@ -40,9 +40,21 @@ class ExamManager {
 
             // 問題が取得できた場合のみ表示
             if (this.questions && this.questions.length > 0) {
-                console.log('問題表示開始');
-                this.renderQuestion();
-                this.renderNavigation();
+                console.log('問題表示開始:', this.questions.length + '問');
+                console.log('最初の問題:', this.questions[0]);
+
+                try {
+                    this.renderQuestion();
+                    console.log('renderQuestion完了');
+
+                    this.renderNavigation();
+                    console.log('renderNavigation完了');
+
+                    console.log('=== 初期化完了 ===');
+                } catch (renderError) {
+                    console.error('レンダリングエラー:', renderError);
+                    this.showError('画面の表示に失敗しました。ページを再読み込みしてください。');
+                }
             } else {
                 console.error('問題データが空です');
                 this.showError('問題の読み込みに失敗しました。ページを再読み込みしてください。');
@@ -199,15 +211,43 @@ class ExamManager {
     async hideLoadingScreen() {
         const loadingScreen = document.getElementById('loadingScreen');
         const examPage = document.getElementById('examPage');
-        
+
+        console.log('hideLoadingScreen開始');
+        console.log('loadingScreen:', loadingScreen);
+        console.log('examPage:', examPage);
+
         return new Promise(resolve => {
-            loadingScreen.style.animation = 'fadeOut 0.5s ease-in-out';
-            setTimeout(() => {
-                loadingScreen.style.display = 'none';
-                examPage.style.display = 'block';
-                examPage.style.animation = 'fadeIn 0.5s ease-in-out';
+            try {
+                if (loadingScreen) {
+                    // アニメーションを使わずに直接切り替え
+                    loadingScreen.style.opacity = '0';
+
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                        console.log('ローディング画面を非表示にしました');
+
+                        if (examPage) {
+                            examPage.style.display = 'block';
+                            examPage.style.opacity = '1';
+                            console.log('試験画面を表示しました');
+                        } else {
+                            console.error('examPageが見つかりません');
+                        }
+
+                        console.log('hideLoadingScreen完了');
+                        resolve();
+                    }, 100);
+                } else {
+                    console.error('loadingScreenが見つかりません');
+                    if (examPage) {
+                        examPage.style.display = 'block';
+                    }
+                    resolve();
+                }
+            } catch (error) {
+                console.error('hideLoadingScreenでエラー:', error);
                 resolve();
-            }, 500);
+            }
         });
     }
 
