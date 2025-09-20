@@ -11,10 +11,7 @@ class ExamManager {
         this.initializeEventListeners();
         this.loadAnswers();
 
-        // フォールバックタイマー: 10秒後に強制的にローディングを終了
-        this.setupFailsafe();
-
-        // 問題をランダムに選択して初期化（非同期）
+        // 直接問題を初期化（ローディング画面なし）
         this.initializeQuestions();
     }
 
@@ -28,15 +25,9 @@ class ExamManager {
             console.log('allRankedQuestions:', typeof allRankedQuestions !== 'undefined' ? allRankedQuestions.length : 'undefined');
             console.log('rankedQuestions:', typeof rankedQuestions !== 'undefined' ? Object.keys(rankedQuestions) : 'undefined');
 
-            // 進捗バーでローディング表示
-            await this.showLoadingWithProgress();
-
             // 問題を生成（筆記10問+実技10問=20問）
             this.questions = await this.generateQuestions();
             console.log('生成された問題数:', this.questions ? this.questions.length : 0);
-
-            // ローディング非表示
-            await this.hideLoadingScreen();
 
             // タイマー開始
             this.setupTimer();
@@ -53,12 +44,6 @@ class ExamManager {
                     this.renderNavigation();
                     console.log('renderNavigation完了');
 
-                    // 正常に初期化完了したのでフォールバックタイマーをクリア
-                    if (this.failsafeTimer) {
-                        clearTimeout(this.failsafeTimer);
-                        console.log('フォールバックタイマーをクリア');
-                    }
-
                     console.log('=== 初期化完了 ===');
                 } catch (renderError) {
                     console.error('レンダリングエラー:', renderError);
@@ -72,7 +57,6 @@ class ExamManager {
         } catch (error) {
             console.error('問題の初期化に失敗:', error);
             console.error('エラー詳細:', error.stack);
-            await this.hideLoadingScreen();
             this.showError('問題の読み込みに失敗しました。ページを再読み込みしてください。');
         }
     }
@@ -186,87 +170,9 @@ class ExamManager {
         return array;
     }
 
-    // 進捗バー付きローディング表示
-    async showLoadingWithProgress() {
-        const loadingScreen = document.getElementById('loadingScreen');
-        const progressFill = document.getElementById('progressFill');
-        const progressText = document.getElementById('progressText');
-        const loadingMessage = document.getElementById('loadingMessage');
-        
-        const steps = [
-            { progress: 20, message: '筆記問題を準備中...' },
-            { progress: 40, message: '実技問題を準備中...' },
-            { progress: 60, message: '問題をシャッフル中...' },
-            { progress: 80, message: '最終調整中...' },
-            { progress: 100, message: '完了！' }
-        ];
-        
-        for (const step of steps) {
-            await new Promise(resolve => {
-                setTimeout(() => {
-                    progressFill.style.width = step.progress + '%';
-                    progressText.textContent = step.progress + '%';
-                    loadingMessage.textContent = step.message;
-                    resolve();
-                }, 300);
-            });
-        }
-        
-        // 少し待ってから次の段階へ
-        await new Promise(resolve => setTimeout(resolve, 500));
-    }
-
-    // ローディング画面を非表示
-    async hideLoadingScreen() {
-        const loadingScreen = document.getElementById('loadingScreen');
-        const examPage = document.getElementById('examPage');
-
-        console.log('hideLoadingScreen開始');
-        console.log('loadingScreen:', loadingScreen);
-        console.log('examPage:', examPage);
-
-        return new Promise(resolve => {
-            try {
-                if (loadingScreen) {
-                    // アニメーションを使わずに直接切り替え
-                    loadingScreen.style.opacity = '0';
-
-                    setTimeout(() => {
-                        loadingScreen.style.display = 'none';
-                        console.log('ローディング画面を非表示にしました');
-
-                        if (examPage) {
-                            examPage.style.display = 'block';
-                            examPage.style.opacity = '1';
-                            console.log('試験画面を表示しました');
-                        } else {
-                            console.error('examPageが見つかりません');
-                        }
-
-                        console.log('hideLoadingScreen完了');
-                        resolve();
-                    }, 100);
-                } else {
-                    console.error('loadingScreenが見つかりません');
-                    if (examPage) {
-                        examPage.style.display = 'block';
-                    }
-                    resolve();
-                }
-            } catch (error) {
-                console.error('hideLoadingScreenでエラー:', error);
-                resolve();
-            }
-        });
-    }
 
     // エラー表示
     showError(message) {
-        // ローディング画面を非表示
-        const loadingScreen = document.getElementById('loadingScreen');
-        if (loadingScreen) {
-            loadingScreen.style.display = 'none';
-        }
 
         // エラー表示エリアを作成
         const errorDiv = document.createElement('div');
@@ -302,80 +208,6 @@ class ExamManager {
         `;
 
         document.body.appendChild(errorDiv);
-    }
-
-    // フォールバック機能: 一定時間後に強制的にローディングを終了
-    setupFailsafe() {
-        console.log('フォールバックタイマーを設定 (10秒)');
-        this.failsafeTimer = setTimeout(() => {
-            console.log('フォールバック実行: 強制的にローディングを終了');
-            this.forceEndLoading();
-        }, 10000); // 10秒後
-    }
-
-    // 強制的にローディングを終了
-    forceEndLoading() {
-        const loadingScreen = document.getElementById('loadingScreen');
-        const examPage = document.getElementById('examPage');
-
-        console.log('強制ローディング終了開始');
-
-        if (loadingScreen) {
-            loadingScreen.style.display = 'none';
-            console.log('ローディング画面を強制非表示');
-        }
-
-        if (examPage) {
-            examPage.style.display = 'block';
-            console.log('試験画面を強制表示');
-        }
-
-        // 基本データで問題を生成（フォールバック）
-        if (!this.questions || this.questions.length === 0) {
-            console.log('フォールバック: 基本データで問題を生成');
-            this.generateFallbackQuestions();
-        }
-
-        // タイマー開始
-        this.setupTimer();
-
-        // 問題がある場合は表示
-        if (this.questions && this.questions.length > 0) {
-            this.renderQuestion();
-            this.renderNavigation();
-            console.log('フォールバック完了: 問題表示');
-        } else {
-            this.showError('問題データの読み込みに失敗しました。ページを再読み込みしてください。');
-        }
-    }
-
-    // フォールバック用の問題生成
-    generateFallbackQuestions() {
-        try {
-            let selectedQuestions = [];
-
-            if (typeof writtenQuestions !== 'undefined' && typeof practicalQuestions !== 'undefined') {
-                const shuffledWritten = this.shuffleArray([...writtenQuestions]);
-                const selectedWritten = shuffledWritten.slice(0, 10);
-
-                const shuffledPractical = this.shuffleArray([...practicalQuestions]);
-                const selectedPractical = shuffledPractical.slice(0, 10);
-
-                selectedQuestions = [...selectedWritten, ...selectedPractical];
-            } else {
-                console.error('基本問題データも利用できません');
-                return;
-            }
-
-            this.questions = selectedQuestions.map((question, index) => ({
-                ...question,
-                id: index + 1
-            }));
-
-            console.log('フォールバック問題生成完了:', this.questions.length + '問');
-        } catch (error) {
-            console.error('フォールバック問題生成失敗:', error);
-        }
     }
 
     initializeElements() {
