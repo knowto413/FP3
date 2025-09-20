@@ -137,7 +137,11 @@ class ExamManager {
         }
 
         // 不足分を補完
-        while (selected.length < count) {
+        let attempts = 0;
+        const maxAttempts = allRankedQuestions.length * 2;
+
+        while (selected.length < count && attempts < maxAttempts) {
+            attempts++;
             const allQuestions = [...allRankedQuestions];
             const shuffled = allQuestions.sort(() => Math.random() - 0.5);
             const candidate = shuffled[0];
@@ -147,6 +151,11 @@ class ExamManager {
             if (!exists) {
                 selected.push(candidate);
             }
+        }
+
+        // もし十分な問題数が確保できない場合は、利用可能な問題数に制限
+        if (selected.length < count) {
+            console.warn(`要求された問題数(${count})が確保できませんでした。利用可能な問題数: ${selected.length}`);
         }
 
         return selected.slice(0, count);
