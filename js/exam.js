@@ -439,7 +439,8 @@ class ExamManager {
             }
 
             this.questionNumber.textContent = `問${this.currentQuestionIndex + 1} / ${this.questions.length}`;
-            this.questionText.textContent = question.statement || '問題文が設定されていません';
+            // 問題文をHTMLとして解釈して表示（構造化対応）
+            this.questionText.innerHTML = question.statement || '問題文が設定されていません';
 
             console.log('問題文設定完了:', question.statement);
 
