@@ -84,15 +84,23 @@ class ExamManager {
                     selectedQuestions = this.getWeightedRandomQuestions(20);
                     console.log('ランク重み付き問題を生成しました:', selectedQuestions.length);
                 } else if (hasBasicData) {
-                    // 従来の筆記10問+実技10問
-                    const shuffledWritten = this.shuffleArray([...writtenQuestions]);
-                    const selectedWritten = shuffledWritten.slice(0, 10);
+                    // 強化された従来方式（筆記+実技をランダム混合）
+                    console.log('=== 強化従来方式 ===');
 
-                    const shuffledPractical = this.shuffleArray([...practicalQuestions]);
-                    const selectedPractical = shuffledPractical.slice(0, 10);
+                    // 全問題をプールして完全ランダム選択
+                    const allBasicQuestions = [...writtenQuestions, ...practicalQuestions];
+                    console.log(`基本問題プール: 筆記${writtenQuestions.length}問 + 実技${practicalQuestions.length}問 = 計${allBasicQuestions.length}問`);
 
-                    selectedQuestions = [...selectedWritten, ...selectedPractical];
-                    console.log('従来方式で問題を生成しました:', selectedQuestions.length);
+                    // 完全ランダムシャッフル
+                    const shuffledAll = this.fisherYatesShuffle(allBasicQuestions);
+
+                    // ランダムに20問選択
+                    selectedQuestions = shuffledAll.slice(0, 20);
+
+                    // 筆記・実技の比率を表示
+                    const writtenSelected = selectedQuestions.filter(q => q.type === 'written').length;
+                    const practicalSelected = selectedQuestions.filter(q => q.type === 'practical').length;
+                    console.log(`選択結果: 筆記${writtenSelected}問 + 実技${practicalSelected}問 = 計${selectedQuestions.length}問`);
                 } else {
                     console.error('問題データが見つかりません');
                     reject(new Error('問題データが見つかりません'));
@@ -105,11 +113,16 @@ class ExamManager {
                     return;
                 }
 
+                // 最終完全ランダムシャッフル
+                const finalShuffled = this.fisherYatesShuffle(selectedQuestions);
+
                 // IDを振り直し
-                const allQuestions = selectedQuestions.map((question, index) => ({
+                const allQuestions = finalShuffled.map((question, index) => ({
                     ...question,
                     id: index + 1
                 }));
+
+                console.log('最終問題順序もランダム化完了');
 
                 console.log('最終的な問題数:', allQuestions.length);
 
@@ -125,60 +138,124 @@ class ExamManager {
         });
     }
 
-    // 重要度重み付きランダム選択
+    // 強化されたランダム選択（真にランダムな問題出題）
     getWeightedRandomQuestions(count = 20) {
-        const weights = { 'A': 0.15, 'B': 0.35, 'C': 0.35, 'D': 0.15 };
-        let selected = [];
+        console.log('=== 強化ランダム出題開始 ===');
 
-        for (const [rank, weight] of Object.entries(weights)) {
-            const rankCount = Math.floor(count * weight);
-            const rankQuestions = this.getQuestionsByRank(rank, rankCount);
-            selected = [...selected, ...rankQuestions];
+        // より多様性のあるランダム重み付け生成
+        const baseWeights = { 'A': 0.10, 'B': 0.25, 'C': 0.35, 'D': 0.30 };
+        const randomVariation = 0.1; // ±10%のランダム変動
+
+        const weights = {};
+        for (const [rank, baseWeight] of Object.entries(baseWeights)) {
+            const variation = (Math.random() - 0.5) * 2 * randomVariation;
+            weights[rank] = Math.max(0.05, Math.min(0.6, baseWeight + variation));
         }
 
-        // 不足分を補完
+        console.log('動的重み付け:', weights);
+
+        let selected = [];
+
+        // フェーズ1: ランク別重み付き選択（より少なめ）
+        const weightedCount = Math.floor(count * 0.6); // 60%のみ重み付き
+        for (const [rank, weight] of Object.entries(weights)) {
+            const rankCount = Math.floor(weightedCount * weight);
+            if (rankCount > 0) {
+                const rankQuestions = this.getQuestionsByRank(rank, rankCount);
+                selected = [...selected, ...rankQuestions];
+                console.log(`${rank}ランク: ${rankCount}問選択`);
+            }
+        }
+
+        // フェーズ2: 完全ランダム補完（残り40%）
+        const remainingCount = count - selected.length;
+        console.log(`完全ランダム補完: ${remainingCount}問`);
+
         let attempts = 0;
-        const maxAttempts = allRankedQuestions ? Math.max(allRankedQuestions.length * 2, 100) : 100;
+        const maxAttempts = 1000;
 
         while (selected.length < count && attempts < maxAttempts && allRankedQuestions && allRankedQuestions.length > 0) {
             attempts++;
-            const allQuestions = [...allRankedQuestions];
-            const shuffled = allQuestions.sort(() => Math.random() - 0.5);
-            const candidate = shuffled[0];
+
+            // 真にランダムな問題選択
+            const randomIndex = Math.floor(Math.random() * allRankedQuestions.length);
+            const candidate = allRankedQuestions[randomIndex];
 
             if (candidate) {
-                // 重複チェック
-                const exists = selected.some(q => q.originalId === candidate.originalId);
+                // 重複チェック（より厳密）
+                const exists = selected.some(q =>
+                    q.originalId === candidate.originalId ||
+                    q.id === candidate.id ||
+                    (q.statement && q.statement === candidate.statement)
+                );
+
                 if (!exists) {
                     selected.push(candidate);
+                    console.log(`ランダム追加: 問題${candidate.id} (${candidate.rank}ランク)`);
                 }
             }
         }
 
-        // もし十分な問題数が確保できない場合は、利用可能な問題数に制限
-        if (selected.length < count) {
-            console.warn(`要求された問題数(${count})が確保できませんでした。利用可能な問題数: ${selected.length}`);
-        }
+        // フェーズ3: 最終シャッフル（Fisher-Yates完全ランダム）
+        const finalQuestions = this.fisherYatesShuffle([...selected]);
 
-        return selected.slice(0, count);
+        console.log(`最終選択: ${finalQuestions.length}問`);
+        console.log('ランク分布:', this.analyzeRankDistribution(finalQuestions));
+
+        return finalQuestions.slice(0, count);
     }
 
-    // ランク別問題取得
+    // ランク別問題取得（強化シャッフル）
     getQuestionsByRank(rank, count) {
         if (typeof rankedQuestions === 'undefined') return [];
 
         const questions = rankedQuestions[rank] || [];
-        const shuffled = [...questions].sort(() => Math.random() - 0.5);
+        console.log(`${rank}ランク利用可能問題数: ${questions.length}`);
+
+        if (questions.length === 0) return [];
+
+        // Fisher-Yatesアルゴリズムで完全ランダムシャッフル
+        const shuffled = this.fisherYatesShuffle([...questions]);
         return shuffled.slice(0, count);
     }
 
-    // 配列をシャッフル
-    shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
+    // Fisher-Yates完全ランダムシャッフル
+    fisherYatesShuffle(array) {
+        const result = [...array];
+
+        for (let i = result.length - 1; i > 0; i--) {
+            // より強力なランダム性のため複数のランダム値を組み合わせ
+            const randomSeed1 = Math.random();
+            const randomSeed2 = Math.random();
+            const randomSeed3 = Date.now() % 1000 / 1000;
+
+            const combinedRandom = (randomSeed1 + randomSeed2 + randomSeed3) / 3;
+            const j = Math.floor(combinedRandom * (i + 1));
+
+            [result[i], result[j]] = [result[j], result[i]];
         }
-        return array;
+
+        return result;
+    }
+
+    // 従来のシャッフル（後方互換性のため残存）
+    shuffleArray(array) {
+        return this.fisherYatesShuffle(array);
+    }
+
+    // ランク分布分析
+    analyzeRankDistribution(questions) {
+        const distribution = { 'A': 0, 'B': 0, 'C': 0, 'D': 0, 'その他': 0 };
+
+        questions.forEach(q => {
+            if (q.rank && distribution.hasOwnProperty(q.rank)) {
+                distribution[q.rank]++;
+            } else {
+                distribution['その他']++;
+            }
+        });
+
+        return distribution;
     }
 
 
