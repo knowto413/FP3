@@ -376,12 +376,18 @@ footer {
 }
 
 .question-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1.2rem;
+    line-height: 2.0;
     margin-bottom: 2rem;
-    padding: 1.5rem;
+    padding: 2rem;
     background: #f8f9fa;
-    border-radius: 8px;
+    border-radius: 12px;
+    white-space: pre-line; /* 改行を有効にする */
+    word-wrap: break-word;
+    letter-spacing: 0.5px;
+    text-align: left;
+    border-left: 4px solid #3498db;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .choices {
@@ -392,12 +398,17 @@ footer {
 
 .choice {
     display: flex;
-    align-items: center;
-    padding: 1rem;
+    align-items: flex-start;
+    padding: 1.5rem;
     border: 2px solid #e9ecef;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.2s ease;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
 }
 
 .choice:hover {
@@ -412,8 +423,12 @@ footer {
 
 .choice label {
     cursor: pointer;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     flex: 1;
+    line-height: 1.8;
+    white-space: pre-line; /* 改行を有効にする */
+    word-wrap: break-word;
+    margin-left: 0.5rem;
 }
 
 .choice.selected {
@@ -950,15 +965,18 @@ footer {
     }
     
     .question-text {
-        font-size: 1rem;
-        padding: 1rem;
+        font-size: 1.1rem;
+        padding: 1.5rem;
         margin-bottom: 1rem;
+        line-height: 1.9;
+        letter-spacing: 0.3px;
     }
     
     .choice {
-        padding: 1rem;
-        margin-bottom: 0.5rem;
-        font-size: 0.95rem;
+        padding: 1.2rem;
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+        line-height: 1.7;
     }
     
     .control-panel {
@@ -1087,16 +1105,17 @@ footer {
     }
     
     .question-text {
-        font-size: 0.9rem;
-        padding: 0.8rem;
-        line-height: 1.6;
+        font-size: 1rem;
+        padding: 1.2rem;
+        line-height: 1.8;
+        letter-spacing: 0.2px;
     }
     
     .choice {
-        padding: 0.8rem;
-        margin-bottom: 0.4rem;
-        font-size: 0.9rem;
-        line-height: 1.4;
+        padding: 1rem;
+        margin-bottom: 0.6rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
     
     .choice input[type="radio"] {
