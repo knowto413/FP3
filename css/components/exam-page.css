@@ -1,0 +1,145 @@
+/* 試験画面 */
+.exam-page {
+    padding: 1rem 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.exam-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex: 1;
+    min-height: calc(100vh - 120px);
+}
+
+/* 問題ナビゲーション */
+.question-nav {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.question-nav h3 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.nav-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.nav-button {
+    padding: 0.7rem;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.nav-button:hover {
+    border-color: #2c5aa0;
+}
+
+.nav-button.current {
+    background: #2c5aa0;
+    color: white;
+    border-color: #2c5aa0;
+}
+
+.nav-button.answered {
+    background: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+/* 問題エリア */
+.question-area {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* 重要度ランク表示 */
+.question-rank {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.question-rank.rank-A {
+    background: linear-gradient(45deg, #ff4444, #ff6666);
+    color: white;
+}
+
+.question-rank.rank-B {
+    background: linear-gradient(45deg, #ff8800, #ffaa33);
+    color: white;
+}
+
+.question-rank.rank-C {
+    background: linear-gradient(45deg, #4CAF50, #66BB6A);
+    color: white;
+}
+
+.question-rank.rank-D {
+    background: linear-gradient(45deg, #2196F3, #42A5F5);
+    color: white;
+}
+
+.rank-tooltip {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.question-rank:hover .rank-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 問題番号と本文 */
+#questionNumber {
+    color: #2c5aa0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#questionText {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #333;
+}

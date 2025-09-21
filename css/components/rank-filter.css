@@ -1,0 +1,85 @@
+/* ランクフィルターUI */
+.rank-filter {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.rank-filter h3 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.rank-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.rank-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.rank-btn.active {
+    transform: scale(1.05);
+}
+
+.rank-btn.rank-A {
+    border-color: #ff4444;
+    color: #ff4444;
+}
+
+.rank-btn.rank-A.active {
+    background: #ff4444;
+    color: white;
+}
+
+.rank-btn.rank-B {
+    border-color: #ff8800;
+    color: #ff8800;
+}
+
+.rank-btn.rank-B.active {
+    background: #ff8800;
+    color: white;
+}
+
+.rank-btn.rank-C {
+    border-color: #ffcc00;
+    color: #ffaa00;
+}
+
+.rank-btn.rank-C.active {
+    background: #ffcc00;
+    color: #333;
+}
+
+.rank-btn.rank-D {
+    border-color: #888888;
+    color: #888888;
+}
+
+.rank-btn.rank-D.active {
+    background: #888888;
+    color: white;
+}
+
+.rank-btn.rank-ALL {
+    border-color: #2c5aa0;
+    color: #2c5aa0;
+}
+
+.rank-btn.rank-ALL.active {
+    background: #2c5aa0;
+    color: white;
+}

@@ -1,0 +1,114 @@
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .question-rank {
+        position: static;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    .exam-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .question-nav {
+        order: 2;
+    }
+
+    .question-area {
+        order: 1;
+        padding: 1.5rem;
+    }
+
+    .control-panel {
+        order: 3;
+    }
+
+    .nav-buttons {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.3rem;
+    }
+
+    .nav-button {
+        padding: 0.5rem 0.3rem;
+        font-size: 0.9rem;
+    }
+
+    .choice {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .choice input[type="radio"] {
+        transform: scale(1);
+    }
+
+    .rank-buttons {
+        justify-content: center;
+    }
+
+    .rank-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .catch-copy {
+        font-size: 1.8rem;
+    }
+
+    .start-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .timer {
+        font-size: 1.5rem;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 20% auto;
+        padding: 1.5rem;
+    }
+}
+
+/* Android特有の調整 */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .question-area {
+        padding: 1rem;
+    }
+
+    .choice {
+        padding: 0.8rem;
+    }
+
+    .nav-buttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .rank-buttons {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .rank-btn {
+        text-align: center;
+        width: 100%;
+    }
+}

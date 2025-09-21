@@ -1,0 +1,100 @@
+/* コントロールパネル */
+.control-panel {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+/* タイマーセクション */
+.timer-section {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.timer-section h3 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+}
+
+.timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #28a745;
+    font-family: 'Courier New', monospace;
+}
+
+.timer.warning {
+    color: #ffc107;
+    animation: blink 1s infinite;
+}
+
+.timer.danger {
+    color: #dc3545;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.3; }
+}
+
+/* ナビゲーションセクション */
+.navigation-section {
+    margin-bottom: 1.5rem;
+}
+
+.nav-btn {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #2c5aa0;
+    background: white;
+    color: #2c5aa0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background: #2c5aa0;
+    color: white;
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nav-btn.finish-style {
+    background: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.nav-btn.finish-style:hover:not(:disabled) {
+    background: #218838;
+    border-color: #1e7e34;
+}
+
+/* 終了ボタン */
+.finish-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.05rem;
+    transition: all 0.2s ease;
+}
+
+.finish-btn:hover {
+    background: #c82333;
+}

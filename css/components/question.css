@@ -1,0 +1,135 @@
+/* 問題表示コンポーネント */
+
+/* 【条件】などのキーワードを視覚的に強調 */
+.question-text:has(*) .condition-highlight,
+.question-text .condition-highlight {
+    background: linear-gradient(135deg, #e8f4fd, #d4edda);
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(40, 167, 69, 0.15);
+}
+
+.question-text .condition-highlight:before {
+    content: "📋";
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* 箇条書き項目の見た目改善 */
+.question-text .bullet-list {
+    margin: 1rem 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.question-text .bullet-item {
+    margin: 0.8rem 0;
+    padding: 0.8rem 1rem;
+    background: rgba(52, 152, 219, 0.08);
+    border-left: 3px solid #3498db;
+    border-radius: 0 6px 6px 0;
+    position: relative;
+}
+
+.question-text .bullet-item:before {
+    content: "▶";
+    color: #3498db;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* 数値や重要な情報を強調 */
+.question-text .highlight-number {
+    background: #fff3cd;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: #856404;
+    font-weight: bold;
+    border: 1px solid #ffeaa7;
+}
+
+/* テーブル風の整列表示 */
+.question-text .data-table {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+.question-text .data-row {
+    display: flex;
+    border-bottom: 1px solid #f1f3f4;
+    padding: 0.5rem;
+}
+
+.question-text .data-row:last-child {
+    border-bottom: none;
+}
+
+.question-text .data-label {
+    flex: 0 0 30%;
+    font-weight: bold;
+    color: #495057;
+    background: #f8f9fa;
+    padding: 0.5rem;
+    border-right: 1px solid #dee2e6;
+}
+
+.question-text .data-value {
+    flex: 1;
+    padding: 0.5rem;
+    color: #212529;
+}
+
+/* 選択肢 */
+.choices {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.choice {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.choice:hover {
+    border-color: #2c5aa0;
+    background: #f8f9fa;
+}
+
+.choice input[type="radio"] {
+    margin-right: 1rem;
+    transform: scale(1.2);
+}
+
+.choice label {
+    cursor: pointer;
+    font-size: 1.1rem;
+    flex: 1;
+    line-height: 1.8;
+    white-space: pre-line; /* 改行を有効にする */
+    word-wrap: break-word;
+    margin-left: 0.5rem;
+}
+
+.choice.selected {
+    border-color: #2c5aa0;
+    background: #e3f2fd;
+}
