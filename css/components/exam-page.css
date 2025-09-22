@@ -129,17 +129,34 @@
     visibility: visible;
 }
 
-/* 問題番号と本文 */
+/* 問題コンテンツのレイアウト */
+.question-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* デスクトップでは問題番号を最初に表示 */
+.question-header {
+    order: 1;
+    margin-bottom: 1.5rem;
+}
+
+#questionText {
+    order: 2;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.choices {
+    order: 3;
+}
+
+/* 問題番号 */
 #questionNumber {
     color: #2c5aa0;
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
-}
-
-#questionText {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    color: #333;
 }

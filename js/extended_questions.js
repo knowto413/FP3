@@ -1238,7 +1238,7 @@ const extractedPracticalQuestions = [
   {
     "id": 62,
     "type": "practical",
-    "statement": "Aさんの相続に係る課税遺産総額（課税価格の合計額－遺産に係る基礎控除額）が２億2,<span class=\"highlight-number\">000万円</span>であった場合の相続税の総額は、\n次のうちどれか。",    "choices": [
+    "statement": "Aさんの相続に係る課税遺産総額（課税価格の合計額－遺産に係る基礎控除額）が<span class=\"highlight-number\">２億2,000万円</span>であった場合の相続税の総額は、\n次のうちどれか。",    "choices": [
       {
       "id": 1,
       "text": "4,600万円"
@@ -1520,7 +1520,7 @@ const extractedPracticalQuestions = [
   {
     "id": 76,
     "type": "practical",
-    "statement": "仮に、 Aさんの相続が現時点（<span class=\"highlight-number\">2025年</span>９月11日）で開始し、 Aさんの相続に係る課税遺産総額\n（「課税価格の合計額－遺産に係る基礎控除額」）\nが２億8,<span class=\"highlight-number\">000万円</span>であった場合の相続税の総額は、\n次のうちどれか。",    "choices": [
+    "statement": "仮に、 Aさんの相続が現時点（<span class=\"highlight-number\">2025年</span>９月11日）で開始し、 Aさんの相続に係る課税遺産総額\n（「課税価格の合計額－遺産に係る基礎控除額」）\nが<span class=\"highlight-number\">２億8,000万円</span>であった場合の相続税の総額は、\n次のうちどれか。",    "choices": [
       {
       "id": 1,
       "text": "6,700万円"

@@ -1,11 +1,11 @@
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .container {
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .hero-section {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
     }
 
     .question-rank {
@@ -17,19 +17,51 @@
     .exam-container {
         grid-template-columns: 1fr;
         gap: 1rem;
-    }
-
-    .question-nav {
-        order: 2;
+        padding: 0 10px;
     }
 
     .question-area {
         order: 1;
-        padding: 1.5rem;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* スマホでは問題番号を下部に移動 */
+    .question-header {
+        order: 2;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    #questionNumber {
+        font-size: 1rem;
+        text-align: center;
+        color: #666;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        background: #f8f9fa;
+        border-radius: 20px;
+    }
+
+    #questionText {
+        order: 1;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .choices {
+        order: 3;
+    }
+
+    .question-nav {
+        order: 3;
+        padding: 1rem;
     }
 
     .control-panel {
-        order: 3;
+        order: 2;
+        padding: 1rem;
     }
 
     .nav-buttons {
