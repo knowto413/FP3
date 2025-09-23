@@ -2,7 +2,7 @@ class ExamManager {
     constructor() {
         this.currentQuestionIndex = 0;
         this.answers = {};
-        this.timeLimit = 30 * 60; // 30分（秒）- 筆記+実技の20問対応
+        this.timeLimit = 15 * 60; // 15分（秒）- 10問対応
         this.remainingTime = this.timeLimit;
         this.timerInterval = null;
         this.startTime = parseInt(sessionStorage.getItem('examStartTime')) || Date.now();
@@ -25,7 +25,7 @@ class ExamManager {
             console.log('allRankedQuestions:', typeof allRankedQuestions !== 'undefined' ? allRankedQuestions.length : 'undefined');
             console.log('rankedQuestions:', typeof rankedQuestions !== 'undefined' ? Object.keys(rankedQuestions) : 'undefined');
 
-            // 問題を生成（筆記10問+実技10問=20問）
+            // 問題を生成（10問）
             this.questions = await this.generateQuestions();
             console.log('生成された問題数:', this.questions ? this.questions.length : 0);
 
@@ -81,7 +81,7 @@ class ExamManager {
                 // ランク付き問題データが利用可能な場合
                 if (hasRankedData) {
                     // 重要度重み付きランダム選択
-                    selectedQuestions = this.getWeightedRandomQuestions(20);
+                    selectedQuestions = this.getWeightedRandomQuestions(10);
                     console.log('ランク重み付き問題を生成しました:', selectedQuestions.length);
                 } else if (hasBasicData) {
                     // 強化された従来方式（筆記+実技をランダム混合）
@@ -94,8 +94,8 @@ class ExamManager {
                     // 完全ランダムシャッフル
                     const shuffledAll = this.fisherYatesShuffle(allBasicQuestions);
 
-                    // ランダムに20問選択
-                    selectedQuestions = shuffledAll.slice(0, 20);
+                    // ランダムに10問選択
+                    selectedQuestions = shuffledAll.slice(0, 10);
 
                     // 筆記・実技の比率を表示
                     const writtenSelected = selectedQuestions.filter(q => q.type === 'written').length;
@@ -139,7 +139,7 @@ class ExamManager {
     }
 
     // 強化されたランダム選択（真にランダムな問題出題）
-    getWeightedRandomQuestions(count = 20) {
+    getWeightedRandomQuestions(count = 10) {
         console.log('=== 強化ランダム出題開始 ===');
 
         // より多様性のあるランダム重み付け生成
