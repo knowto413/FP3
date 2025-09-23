@@ -32,6 +32,9 @@ export class TimerManager {
         this.onTimeWarning = callbacks.onTimeWarning;
         this.onTimeUp = callbacks.onTimeUp;
 
+        // ヘッダータイマー要素も取得（スマホ表示用）
+        this.headerTimerElement = document.getElementById('headerTimer');
+
         // デバッグモードでタイマーをスキップ
         if (EXAM_CONFIG.DEBUG.SKIP_TIMER) {
             console.log('Timer skipped (debug mode)');
@@ -130,7 +133,13 @@ export class TimerManager {
         const remaining = this.getRemainingTime();
         const formattedTime = FormatUtil.formatTime(remaining);
 
+        // メインタイマーを更新
         this.timerElement.textContent = formattedTime;
+
+        // ヘッダータイマーも更新（スマホ用）
+        if (this.headerTimerElement) {
+            this.headerTimerElement.textContent = formattedTime;
+        }
 
         // 時間の状態に応じてクラスを更新
         this.updateTimerClass(remaining);
@@ -148,12 +157,24 @@ export class TimerManager {
     updateTimerClass(remaining) {
         if (!this.timerElement) return;
 
+        // メインタイマーのクラス更新
         this.timerElement.classList.remove('warning', 'danger');
 
         if (remaining <= EXAM_CONFIG.UI.DANGER_TIME) {
             this.timerElement.classList.add('danger');
         } else if (remaining <= EXAM_CONFIG.UI.WARNING_TIME) {
             this.timerElement.classList.add('warning');
+        }
+
+        // ヘッダータイマーのクラスも同期
+        if (this.headerTimerElement) {
+            this.headerTimerElement.classList.remove('warning', 'danger');
+
+            if (remaining <= EXAM_CONFIG.UI.DANGER_TIME) {
+                this.headerTimerElement.classList.add('danger');
+            } else if (remaining <= EXAM_CONFIG.UI.WARNING_TIME) {
+                this.headerTimerElement.classList.add('warning');
+            }
         }
     }
 
@@ -183,6 +204,12 @@ export class TimerManager {
         if (this.timerElement) {
             this.timerElement.textContent = '00:00';
             this.timerElement.classList.add('danger');
+        }
+
+        // ヘッダータイマーも同期
+        if (this.headerTimerElement) {
+            this.headerTimerElement.textContent = '00:00';
+            this.headerTimerElement.classList.add('danger');
         }
 
         console.log('Time up!');
@@ -269,9 +296,17 @@ export class TimerManager {
         this.pausedTime = 0;
         this.timeLimit = EXAM_CONFIG.TIME_LIMIT;
 
+        const formattedTime = FormatUtil.formatTime(this.timeLimit);
+
         if (this.timerElement) {
-            this.timerElement.textContent = FormatUtil.formatTime(this.timeLimit);
+            this.timerElement.textContent = formattedTime;
             this.timerElement.classList.remove('warning', 'danger');
+        }
+
+        // ヘッダータイマーもリセット
+        if (this.headerTimerElement) {
+            this.headerTimerElement.textContent = formattedTime;
+            this.headerTimerElement.classList.remove('warning', 'danger');
         }
 
         console.log('Timer reset');
@@ -283,6 +318,7 @@ export class TimerManager {
     cleanup() {
         this.stop();
         this.timerElement = null;
+        this.headerTimerElement = null;
         this.onTimeUpdate = null;
         this.onTimeWarning = null;
         this.onTimeUp = null;

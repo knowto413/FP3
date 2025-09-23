@@ -167,7 +167,7 @@ export class ExamSystem {
             this.handleRankFilterChange(event.detail.rank);
         });
 
-        // コントロールボタン
+        // コントロールボタン（デスクトップ）
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         const finishBtn = document.getElementById('finishBtn');
@@ -182,6 +182,23 @@ export class ExamSystem {
 
         if (finishBtn) {
             finishBtn.addEventListener('click', () => this.showFinishConfirmation());
+        }
+
+        // スマホ用コントロールボタン
+        const prevBtnMobile = document.getElementById('prevBtnMobile');
+        const nextBtnMobile = document.getElementById('nextBtnMobile');
+        const finishBtnMobile = document.getElementById('finishBtnMobile');
+
+        if (prevBtnMobile) {
+            prevBtnMobile.addEventListener('click', () => this.previousQuestion());
+        }
+
+        if (nextBtnMobile) {
+            nextBtnMobile.addEventListener('click', () => this.nextQuestion());
+        }
+
+        if (finishBtnMobile) {
+            finishBtnMobile.addEventListener('click', () => this.showFinishConfirmation());
         }
 
         console.log('Event listeners set up');

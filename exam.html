@@ -8,7 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>FP3級CBTデモ試験</h1>
+        <div class="header-content">
+            <h1>FP3級CBTデモ試験</h1>
+            <div class="header-timer" id="headerTimer">30:00</div>
+        </div>
     </header>
 
     <main class="exam-page" id="examPage">
@@ -64,6 +67,17 @@
                     <button id="finishBtn" class="finish-btn">試験を終了する</button>
                 </div>
             </aside>
+        </div>
+
+        <!-- スマホ用ナビゲーションボタン -->
+        <div class="navigation-buttons">
+            <button id="prevBtnMobile" class="nav-btn prev-btn" disabled>＜ 前の問題へ</button>
+            <button id="nextBtnMobile" class="nav-btn next-btn">次の問題へ ＞</button>
+        </div>
+
+        <!-- スマホ用終了ボタン -->
+        <div class="finish-section">
+            <button id="finishBtnMobile" class="finish-btn">試験を終了する</button>
         </div>
     </main>
 

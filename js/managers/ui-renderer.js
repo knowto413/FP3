@@ -293,16 +293,37 @@ export class UIRenderer {
      * @param {number} totalQuestions - 総問題数
      */
     updateControlButtons(currentIndex, totalQuestions) {
-        // 前へボタン
-        this.elements.prevBtn.disabled = currentIndex === 0;
+        // デスクトップ用ボタン
+        if (this.elements.prevBtn) {
+            this.elements.prevBtn.disabled = currentIndex === 0;
+        }
 
-        // 次へボタンのテキストと状態を更新
-        if (currentIndex === totalQuestions - 1) {
-            this.elements.nextBtn.textContent = '採点する';
-            this.elements.nextBtn.classList.add('finish-style');
-        } else {
-            this.elements.nextBtn.textContent = '次の問題へ ＞';
-            this.elements.nextBtn.classList.remove('finish-style');
+        if (this.elements.nextBtn) {
+            if (currentIndex === totalQuestions - 1) {
+                this.elements.nextBtn.textContent = '採点する';
+                this.elements.nextBtn.classList.add('finish-style');
+            } else {
+                this.elements.nextBtn.textContent = '次の問題へ ＞';
+                this.elements.nextBtn.classList.remove('finish-style');
+            }
+        }
+
+        // スマホ用ボタン
+        const prevBtnMobile = document.getElementById('prevBtnMobile');
+        const nextBtnMobile = document.getElementById('nextBtnMobile');
+
+        if (prevBtnMobile) {
+            prevBtnMobile.disabled = currentIndex === 0;
+        }
+
+        if (nextBtnMobile) {
+            if (currentIndex === totalQuestions - 1) {
+                nextBtnMobile.textContent = '採点する';
+                nextBtnMobile.classList.add('finish-style');
+            } else {
+                nextBtnMobile.textContent = '次の問題へ ＞';
+                nextBtnMobile.classList.remove('finish-style');
+            }
         }
     }
 
