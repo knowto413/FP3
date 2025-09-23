@@ -71,7 +71,7 @@
 
     /* ナビゲーション（前へ・次へボタン）を問題エリア直下に */
     .navigation-buttons {
-        order: 2;
+        order: 1.5;
         display: flex;
         gap: 0.8rem;
         padding: 1.2rem;
