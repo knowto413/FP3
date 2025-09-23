@@ -16,11 +16,20 @@
 
     /* スマホレイアウト: 問題文を最優先に */
     .exam-container {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
         gap: 1rem;
         padding: 0 10px;
         min-height: calc(100vh - 120px);
+        grid-template-columns: none !important;
+    }
+
+    /* スマホでは問題ナビゲーションを完全に独立した配置に強制 */
+    .question-nav {
+        width: 100% !important;
+        float: none !important;
+        position: static !important;
+        display: block !important;
     }
 
     /* 問題エリアを最上部に配置し、全幅使用 */
@@ -105,6 +114,11 @@
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         margin-bottom: 1rem;
         border-top: 3px solid #28a745;
+        width: 100% !important;
+        float: none !important;
+        position: static !important;
+        display: block !important;
+        clear: both !important;
     }
 
     .question-nav h3 {
